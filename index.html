@@ -1,0 +1,1016 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <link rel="icon" type="image/png" href="favicon.png"/>
+    <title>CG Lab</title>
+    <style>
+        ::selection{
+            color: teal;
+            background-color: black;
+        }
+
+        body{
+            font-size: large;
+            background-color: #0d101e;
+            text-align: center;
+        }
+
+        h1{
+            color: deepskyblue;
+        }
+
+        pre{
+            text-align: left;
+        }
+
+        div{
+            background: #272822; 
+            overflow:auto;  
+            border:solid goldenrod; 
+            border-width: .1em .1em .1em .6em; 
+            padding: .2em .6em;
+        }
+
+        a{
+            color: darkgreen;
+            text-shadow: 0px 0px 3px chartreuse;
+            cursor: pointer; 
+            text-decoration: none; 
+            font-size: xx-large;
+        }
+
+        a:hover{ 
+            text-shadow: 0px 0px 5px chartreuse; 
+        }
+    
+        .center {
+            margin: auto;
+            width: 50%;
+        }
+
+    </style>
+</head>
+<body>
+
+    <h1 style="color: goldenrod; text-shadow: 0px 0px 3px goldenrod; font-family: 'Lucida Sans', 'Lucida Sans Regular', 'Lucida Grande', 'Lucida Sans Unicode', Geneva, Verdana, sans-serif;">Computer Graphics Lab</h1>
+
+    <h1>1. Point <code><a href="https://repl.it/@dileepdodla/point" target="_blank">▶</a></code></h1>
+    <div class="center">
+<pre style="margin: 0; line-height: 125%;">
+<span style="color: #f92672">import</span> <span style="color: #f8f8f2">turtle</span>
+<span style="color: #f8f8f2">turtle</span><span style="color: #f92672">.</span><span style="color: #f8f8f2">title(</span><span style="color: #e6db74">&quot;Point&quot;</span><span style="color: #f8f8f2">)</span>
+
+<span style="color: #f8f8f2">screen</span> <span style="color: #f92672">=</span> <span style="color: #f8f8f2">turtle</span><span style="color: #f92672">.</span><span style="color: #f8f8f2">Screen()</span>
+<span style="color: #f8f8f2">screen</span><span style="color: #f92672">.</span><span style="color: #f8f8f2">bgcolor(</span><span style="color: #e6db74">&quot;black&quot;</span><span style="color: #f8f8f2">)</span>
+
+<span style="color: #f8f8f2">t</span> <span style="color: #f92672">=</span> <span style="color: #f8f8f2">turtle</span><span style="color: #f92672">.</span><span style="color: #f8f8f2">Turtle()</span>
+
+<span style="color: #f8f8f2">t</span><span style="color: #f92672">.</span><span style="color: #f8f8f2">speed(</span><span style="color: #e6db74">&quot;fastest&quot;</span><span style="color: #f8f8f2">)</span>
+<span style="color: #f8f8f2">t</span><span style="color: #f92672">.</span><span style="color: #f8f8f2">width(</span><span style="color: #ae81ff">3</span><span style="color: #f8f8f2">)</span>
+<span style="color: #f8f8f2">t</span><span style="color: #f92672">.</span><span style="color: #f8f8f2">color(</span><span style="color: #e6db74">&quot;red&quot;</span><span style="color: #f8f8f2">)</span>
+
+<span style="color: #f8f8f2">t</span><span style="color: #f92672">.</span><span style="color: #f8f8f2">dot()</span>
+
+<span style="color: #f8f8f2">t</span><span style="color: #f92672">.</span><span style="color: #f8f8f2">ht()</span>
+</pre>
+    </div>
+
+    <h1>2. Line <code><a href="https://repl.it/@dileepdodla/line" target="_blank">▶</a></code></h1>
+    <div class="center">
+<pre style="margin: 0; line-height: 125%">
+<span style="color: #f92672">import</span> <span style="color: #f8f8f2">turtle</span>
+<span style="color: #f8f8f2">turtle</span><span style="color: #f92672">.</span><span style="color: #f8f8f2">title(</span><span style="color: #e6db74">&quot;Line&quot;</span><span style="color: #f8f8f2">)</span>
+
+<span style="color: #f8f8f2">screen</span> <span style="color: #f92672">=</span> <span style="color: #f8f8f2">turtle</span><span style="color: #f92672">.</span><span style="color: #f8f8f2">Screen()</span>
+<span style="color: #f8f8f2">screen</span><span style="color: #f92672">.</span><span style="color: #f8f8f2">bgcolor(</span><span style="color: #e6db74">&quot;black&quot;</span><span style="color: #f8f8f2">)</span>
+
+<span style="color: #f8f8f2">t</span> <span style="color: #f92672">=</span> <span style="color: #f8f8f2">turtle</span><span style="color: #f92672">.</span><span style="color: #f8f8f2">Turtle()</span>
+<span style="color: #f8f8f2">t</span><span style="color: #f92672">.</span><span style="color: #f8f8f2">speed(</span><span style="color: #e6db74">&quot;fastest&quot;</span><span style="color: #f8f8f2">)</span>
+<span style="color: #f8f8f2">t</span><span style="color: #f92672">.</span><span style="color: #f8f8f2">width(</span><span style="color: #ae81ff">3</span><span style="color: #f8f8f2">)</span>
+<span style="color: #f8f8f2">t</span><span style="color: #f92672">.</span><span style="color: #f8f8f2">color(</span><span style="color: #e6db74">&quot;green&quot;</span><span style="color: #f8f8f2">)</span>
+
+<span style="color: #f8f8f2">t</span><span style="color: #f92672">.</span><span style="color: #f8f8f2">backward(</span><span style="color: #ae81ff">200</span><span style="color: #f8f8f2">)</span>
+<span style="color: #f8f8f2">t</span><span style="color: #f92672">.</span><span style="color: #f8f8f2">forward(</span><span style="color: #ae81ff">400</span><span style="color: #f8f8f2">)</span>
+
+<span style="color: #f8f8f2">t</span><span style="color: #f92672">.</span><span style="color: #f8f8f2">ht()</span>
+</pre>
+    </div>
+
+    <h1>3. Triangle <code><a href="https://repl.it/@dileepdodla/triangle" target="_blank">▶</a></code></h1>
+    <div class="center">
+<pre style="margin: 0; line-height: 125%">
+<span style="color: #f92672">import</span> <span style="color: #f8f8f2">turtle</span>
+<span style="color: #f8f8f2">turtle</span><span style="color: #f92672">.</span><span style="color: #f8f8f2">title(</span><span style="color: #e6db74">&quot;Traingle&quot;</span><span style="color: #f8f8f2">)</span>
+
+<span style="color: #f8f8f2">screen</span> <span style="color: #f92672">=</span> <span style="color: #f8f8f2">turtle</span><span style="color: #f92672">.</span><span style="color: #f8f8f2">Screen()</span>
+<span style="color: #f8f8f2">screen</span><span style="color: #f92672">.</span><span style="color: #f8f8f2">bgcolor(</span><span style="color: #e6db74">&quot;black&quot;</span><span style="color: #f8f8f2">)</span>
+
+<span style="color: #f8f8f2">t</span> <span style="color: #f92672">=</span> <span style="color: #f8f8f2">turtle</span><span style="color: #f92672">.</span><span style="color: #f8f8f2">Turtle()</span>
+<span style="color: #f8f8f2">t</span><span style="color: #f92672">.</span><span style="color: #f8f8f2">speed(</span><span style="color: #e6db74">&quot;fastest&quot;</span><span style="color: #f8f8f2">)</span>
+<span style="color: #f8f8f2">t</span><span style="color: #f92672">.</span><span style="color: #f8f8f2">width(</span><span style="color: #ae81ff">3</span><span style="color: #f8f8f2">)</span>
+<span style="color: #f8f8f2">t</span><span style="color: #f92672">.</span><span style="color: #f8f8f2">color(</span><span style="color: #e6db74">&quot;deepskyblue&quot;</span><span style="color: #f8f8f2">)</span>
+
+<span style="color: #66d9ef">for</span> <span style="color: #f8f8f2">i</span> <span style="color: #f92672">in</span> <span style="color: #f8f8f2">range(</span><span style="color: #ae81ff">3</span><span style="color: #f8f8f2">):</span>
+    <span style="color: #f8f8f2">t</span><span style="color: #f92672">.</span><span style="color: #f8f8f2">left(</span><span style="color: #ae81ff">120</span><span style="color: #f8f8f2">)</span>
+    <span style="color: #f8f8f2">t</span><span style="color: #f92672">.</span><span style="color: #f8f8f2">forward(</span><span style="color: #ae81ff">200</span><span style="color: #f8f8f2">)</span>
+
+<span style="color: #f8f8f2">t</span><span style="color: #f92672">.</span><span style="color: #f8f8f2">ht()</span>
+</pre>
+    </div>
+
+    <h1>4. Rectangle <code><a href="https://repl.it/@dileepdodla/rectangle" target="_blank">▶</a></code></h1>
+    <div class="center">
+<pre style="margin: 0; line-height: 125%">
+<span style="color: #f92672">import</span> <span style="color: #f8f8f2">turtle</span>
+<span style="color: #f8f8f2">turtle</span><span style="color: #f92672">.</span><span style="color: #f8f8f2">title(</span><span style="color: #e6db74">&quot;Rectangle&quot;</span><span style="color: #f8f8f2">)</span>
+
+<span style="color: #f8f8f2">screen</span> <span style="color: #f92672">=</span> <span style="color: #f8f8f2">turtle</span><span style="color: #f92672">.</span><span style="color: #f8f8f2">Screen()</span>
+<span style="color: #f8f8f2">screen</span><span style="color: #f92672">.</span><span style="color: #f8f8f2">bgcolor(</span><span style="color: #e6db74">&quot;black&quot;</span><span style="color: #f8f8f2">)</span>
+
+<span style="color: #f8f8f2">t</span> <span style="color: #f92672">=</span> <span style="color: #f8f8f2">turtle</span><span style="color: #f92672">.</span><span style="color: #f8f8f2">Turtle()</span>
+<span style="color: #f8f8f2">t</span><span style="color: #f92672">.</span><span style="color: #f8f8f2">speed(</span><span style="color: #e6db74">&quot;fastest&quot;</span><span style="color: #f8f8f2">)</span>
+<span style="color: #f8f8f2">t</span><span style="color: #f92672">.</span><span style="color: #f8f8f2">width(</span><span style="color: #ae81ff">2</span><span style="color: #f8f8f2">)</span>
+<span style="color: #f8f8f2">t</span><span style="color: #f92672">.</span><span style="color: #f8f8f2">color(</span><span style="color: #e6db74">&quot;gold&quot;</span><span style="color: #f8f8f2">)</span>
+
+<span style="color: #66d9ef">for</span> <span style="color: #f8f8f2">i</span> <span style="color: #f92672">in</span> <span style="color: #f8f8f2">range(</span><span style="color: #ae81ff">2</span><span style="color: #f8f8f2">):</span>
+    <span style="color: #f8f8f2">t</span><span style="color: #f92672">.</span><span style="color: #f8f8f2">forward(</span><span style="color: #ae81ff">200</span><span style="color: #f8f8f2">)</span>
+    <span style="color: #f8f8f2">t</span><span style="color: #f92672">.</span><span style="color: #f8f8f2">right(</span><span style="color: #ae81ff">90</span><span style="color: #f8f8f2">)</span>
+    <span style="color: #f8f8f2">t</span><span style="color: #f92672">.</span><span style="color: #f8f8f2">forward(</span><span style="color: #ae81ff">100</span><span style="color: #f8f8f2">)</span>
+    <span style="color: #f8f8f2">t</span><span style="color: #f92672">.</span><span style="color: #f8f8f2">right(</span><span style="color: #ae81ff">90</span><span style="color: #f8f8f2">)</span>
+    
+<span style="color: #f8f8f2">t</span><span style="color: #f92672">.</span><span style="color: #f8f8f2">ht()</span>
+</pre>
+    </div>
+
+    <h1>5. Circle <code><a href="https://repl.it/@dileepdodla/circle" target="_blank">▶</a></code></h1>
+    <div class="center">
+<pre style="margin: 0; line-height: 125%"><span style="color: #f92672">import</span> <span style="color: #f8f8f2">turtle</span>
+<span style="color: #f8f8f2">turtle</span><span style="color: #f92672">.</span><span style="color: #f8f8f2">title(</span><span style="color: #e6db74">&quot;Circle&quot;</span><span style="color: #f8f8f2">)</span>
+
+<span style="color: #f8f8f2">screen</span> <span style="color: #f92672">=</span> <span style="color: #f8f8f2">turtle</span><span style="color: #f92672">.</span><span style="color: #f8f8f2">Screen()</span>
+<span style="color: #f8f8f2">screen</span><span style="color: #f92672">.</span><span style="color: #f8f8f2">bgcolor(</span><span style="color: #e6db74">&quot;black&quot;</span><span style="color: #f8f8f2">)</span>
+
+<span style="color: #f8f8f2">t</span> <span style="color: #f92672">=</span> <span style="color: #f8f8f2">turtle</span><span style="color: #f92672">.</span><span style="color: #f8f8f2">Turtle()</span>
+<span style="color: #f8f8f2">t</span><span style="color: #f92672">.</span><span style="color: #f8f8f2">speed(</span><span style="color: #e6db74">&quot;fastest&quot;</span><span style="color: #f8f8f2">)</span>
+<span style="color: #f8f8f2">t</span><span style="color: #f92672">.</span><span style="color: #f8f8f2">width(</span><span style="color: #ae81ff">3</span><span style="color: #f8f8f2">)</span>
+<span style="color: #f8f8f2">t</span><span style="color: #f92672">.</span><span style="color: #f8f8f2">color(</span><span style="color: #e6db74">&quot;magenta&quot;</span><span style="color: #f8f8f2">)</span>
+
+<span style="color: #f8f8f2">t</span><span style="color: #f92672">.</span><span style="color: #f8f8f2">circle(</span><span style="color: #ae81ff">100</span><span style="color: #f8f8f2">)</span>
+
+<span style="color: #f8f8f2">t</span><span style="color: #f92672">.</span><span style="color: #f8f8f2">ht()</span>
+</pre>
+    </div>
+
+    <h1>6. Ellipse <code><a href="https://repl.it/@dileepdodla/ellipse" target="_blank">▶</a></code></h1>
+    <div class="center">
+<pre style="margin: 0; line-height: 125%"><span style="color: #f92672">import</span> <span style="color: #f8f8f2">turtle</span>
+<span style="color: #f8f8f2">turtle</span><span style="color: #f92672">.</span><span style="color: #f8f8f2">title(</span><span style="color: #e6db74">&quot;Ellipse&quot;</span><span style="color: #f8f8f2">)</span>
+
+<span style="color: #f8f8f2">screen</span> <span style="color: #f92672">=</span> <span style="color: #f8f8f2">turtle</span><span style="color: #f92672">.</span><span style="color: #f8f8f2">Screen()</span>
+<span style="color: #f8f8f2">screen</span><span style="color: #f92672">.</span><span style="color: #f8f8f2">bgcolor(</span><span style="color: #e6db74">&quot;black&quot;</span><span style="color: #f8f8f2">)</span>
+
+<span style="color: #f8f8f2">t</span> <span style="color: #f92672">=</span> <span style="color: #f8f8f2">turtle</span><span style="color: #f92672">.</span><span style="color: #f8f8f2">Turtle()</span>
+<span style="color: #f8f8f2">t</span><span style="color: #f92672">.</span><span style="color: #f8f8f2">speed(</span><span style="color: #e6db74">&quot;fastest&quot;</span><span style="color: #f8f8f2">)</span>
+<span style="color: #f8f8f2">t</span><span style="color: #f92672">.</span><span style="color: #f8f8f2">width(</span><span style="color: #ae81ff">3</span><span style="color: #f8f8f2">)</span>
+<span style="color: #f8f8f2">t</span><span style="color: #f92672">.</span><span style="color: #f8f8f2">color(</span><span style="color: #e6db74">&quot;orange&quot;</span><span style="color: #f8f8f2">,</span><span style="color: #e6db74">&quot;black&quot;</span><span style="color: #f8f8f2">)</span>
+
+<span style="color: #f8f8f2">t</span><span style="color: #f92672">.</span><span style="color: #f8f8f2">shape(</span><span style="color: #e6db74">&quot;circle&quot;</span><span style="color: #f8f8f2">)</span>
+<span style="color: #f8f8f2">t</span><span style="color: #f92672">.</span><span style="color: #f8f8f2">shapesize(</span><span style="color: #ae81ff">5</span><span style="color: #f8f8f2">,</span><span style="color: #ae81ff">10</span><span style="color: #f8f8f2">,</span><span style="color: #ae81ff">5</span><span style="color: #f8f8f2">)</span>
+<span style="color: #f8f8f2">t</span><span style="color: #f92672">.</span><span style="color: #f8f8f2">stamp()</span>
+
+<span style="color: #f8f8f2">t</span><span style="color: #f92672">.</span><span style="color: #f8f8f2">ht()</span>
+</pre>
+    </div>
+
+    <h1>7. Rotation <code><a href="https://repl.it/@dileepdodla/rotation" target="_blank">▶</a></code></h1>
+    <div class="center">
+<pre style="margin: 0; line-height: 125%"><span style="color: #f92672">import</span> <span style="color: #f8f8f2">turtle</span>
+<span style="color: #f8f8f2">turtle</span><span style="color: #f92672">.</span><span style="color: #f8f8f2">title(</span><span style="color: #e6db74">&quot;Rotating Object&quot;</span><span style="color: #f8f8f2">)</span>
+
+<span style="color: #f8f8f2">screen</span> <span style="color: #f92672">=</span> <span style="color: #f8f8f2">turtle</span><span style="color: #f92672">.</span><span style="color: #f8f8f2">Screen()</span>
+<span style="color: #f8f8f2">screen</span><span style="color: #f92672">.</span><span style="color: #f8f8f2">bgcolor(</span><span style="color: #e6db74">&quot;black&quot;</span><span style="color: #f8f8f2">)</span>
+
+<span style="color: #f8f8f2">t</span> <span style="color: #f92672">=</span> <span style="color: #f8f8f2">turtle</span><span style="color: #f92672">.</span><span style="color: #f8f8f2">Turtle()</span>
+<span style="color: #f8f8f2">t</span><span style="color: #f92672">.</span><span style="color: #f8f8f2">speed(</span><span style="color: #e6db74">&quot;fastest&quot;</span><span style="color: #f8f8f2">)</span>
+<span style="color: #f8f8f2">t</span><span style="color: #f92672">.</span><span style="color: #f8f8f2">width(</span><span style="color: #ae81ff">10</span><span style="color: #f8f8f2">)</span>
+<span style="color: #f8f8f2">t</span><span style="color: #f92672">.</span><span style="color: #f8f8f2">color(</span><span style="color: #e6db74">&quot;green&quot;</span><span style="color: #f8f8f2">)</span>
+
+<span style="color: #66d9ef">def</span> <span style="color: #a6e22e">drawObject</span><span style="color: #f8f8f2">():</span>
+    <span style="color: #66d9ef">for</span> <span style="color: #f8f8f2">i</span> <span style="color: #f92672">in</span> <span style="color: #f8f8f2">range(</span><span style="color: #ae81ff">10</span><span style="color: #f8f8f2">):</span> 
+        <span style="color: #f8f8f2">t</span><span style="color: #f92672">.</span><span style="color: #f8f8f2">forward(</span><span style="color: #ae81ff">143</span><span style="color: #f8f8f2">)</span> 
+        <span style="color: #f8f8f2">t</span><span style="color: #f92672">.</span><span style="color: #f8f8f2">right(</span><span style="color: #ae81ff">144</span><span style="color: #f8f8f2">)</span> 
+
+<span style="color: #66d9ef">def</span> <span style="color: #a6e22e">rotate</span><span style="color: #f8f8f2">(deg):</span>
+    <span style="color: #f8f8f2">t</span><span style="color: #f92672">.</span><span style="color: #f8f8f2">right(deg)</span>
+
+<span style="color: #66d9ef">while</span> <span style="color: #f8f8f2">True:</span>
+    <span style="color: #f8f8f2">t</span><span style="color: #f92672">.</span><span style="color: #f8f8f2">hideturtle()</span>
+    <span style="color: #f8f8f2">t</span><span style="color: #f92672">.</span><span style="color: #f8f8f2">clear()</span>
+    <span style="color: #f8f8f2">drawObject()</span>
+    <span style="color: #f8f8f2">rotate(</span><span style="color: #ae81ff">35</span><span style="color: #f8f8f2">)</span>
+    <span style="color: #f8f8f2">screen</span><span style="color: #f92672">.</span><span style="color: #f8f8f2">delay(</span><span style="color: #ae81ff">1</span><span style="color: #f8f8f2">)</span>
+</pre>
+    </div>
+
+    <h1>8. 2D Object Filling <code><a href="https://repl.it/@dileepdodla/2DObjectFilling" target="_blank">▶</a></code></h1>
+    <div class="center">
+<pre style="margin: 0; line-height: 125%"><span style="color: #f92672">import</span> <span style="color: #f8f8f2">turtle</span>
+<span style="color: #f8f8f2">turtle</span><span style="color: #f92672">.</span><span style="color: #f8f8f2">title(</span><span style="color: #e6db74">&quot;2D Object Filling&quot;</span><span style="color: #f8f8f2">)</span>
+
+<span style="color: #f8f8f2">screen</span> <span style="color: #f92672">=</span> <span style="color: #f8f8f2">turtle</span><span style="color: #f92672">.</span><span style="color: #f8f8f2">Screen()</span>
+<span style="color: #f8f8f2">screen</span><span style="color: #f92672">.</span><span style="color: #f8f8f2">bgcolor(</span><span style="color: #e6db74">&quot;black&quot;</span><span style="color: #f8f8f2">)</span>
+
+<span style="color: #f8f8f2">t</span> <span style="color: #f92672">=</span> <span style="color: #f8f8f2">turtle</span><span style="color: #f92672">.</span><span style="color: #f8f8f2">Turtle()</span>
+<span style="color: #f8f8f2">t</span><span style="color: #f92672">.</span><span style="color: #f8f8f2">width(</span><span style="color: #ae81ff">3</span><span style="color: #f8f8f2">)</span>
+<span style="color: #f8f8f2">t</span><span style="color: #f92672">.</span><span style="color: #f8f8f2">color(</span><span style="color: #e6db74">&quot;chocolate&quot;</span><span style="color: #f8f8f2">)</span>
+
+<span style="color: #f8f8f2">t</span><span style="color: #f92672">.</span><span style="color: #f8f8f2">begin_fill()</span>
+<span style="color: #66d9ef">for</span> <span style="color: #f8f8f2">i</span> <span style="color: #f92672">in</span> <span style="color: #f8f8f2">range(</span><span style="color: #ae81ff">6</span><span style="color: #f8f8f2">):</span>
+    <span style="color: #f8f8f2">t</span><span style="color: #f92672">.</span><span style="color: #f8f8f2">left(</span><span style="color: #ae81ff">60</span><span style="color: #f8f8f2">)</span>
+    <span style="color: #f8f8f2">t</span><span style="color: #f92672">.</span><span style="color: #f8f8f2">forward(</span><span style="color: #ae81ff">100</span><span style="color: #f8f8f2">)</span>
+<span style="color: #f8f8f2">t</span><span style="color: #f92672">.</span><span style="color: #f8f8f2">end_fill()</span>
+
+<span style="color: #f8f8f2">t</span><span style="color: #f92672">.</span><span style="color: #f8f8f2">ht()</span>
+</pre>
+    </div>
+
+    <h1>9. 2D Object Transformations <code><a href="https://repl.it/@dileepdodla/2DObjectTransformations" target="_blank">▶</a></code></h1>
+    <div class="center">
+<pre style="margin: 0; line-height: 125%"><span style="color: #f92672">from</span> <span style="color: #f8f8f2">time</span> <span style="color: #f92672">import</span> <span style="color: #f8f8f2">sleep</span>
+<span style="color: #f92672">import</span> <span style="color: #f8f8f2">turtle</span>
+<span style="color: #f8f8f2">turtle</span><span style="color: #f92672">.</span><span style="color: #f8f8f2">title(</span><span style="color: #e6db74">&quot;2D Object Transformations&quot;</span><span style="color: #f8f8f2">)</span>
+
+<span style="color: #f8f8f2">screen</span> <span style="color: #f92672">=</span> <span style="color: #f8f8f2">turtle</span><span style="color: #f92672">.</span><span style="color: #f8f8f2">Screen()</span>
+<span style="color: #f8f8f2">screen</span><span style="color: #f92672">.</span><span style="color: #f8f8f2">bgcolor(</span><span style="color: #e6db74">&quot;black&quot;</span><span style="color: #f8f8f2">)</span>
+
+<span style="color: #f8f8f2">t</span> <span style="color: #f92672">=</span> <span style="color: #f8f8f2">turtle</span><span style="color: #f92672">.</span><span style="color: #f8f8f2">Turtle()</span>
+<span style="color: #f8f8f2">t</span><span style="color: #f92672">.</span><span style="color: #f8f8f2">color(</span><span style="color: #e6db74">&quot;red&quot;</span><span style="color: #f8f8f2">)</span>
+<span style="color: #f8f8f2">t</span><span style="color: #f92672">.</span><span style="color: #f8f8f2">width(</span><span style="color: #ae81ff">2</span><span style="color: #f8f8f2">)</span>
+
+<span style="color: #f8f8f2">t</span><span style="color: #f92672">.</span><span style="color: #f8f8f2">goto(</span><span style="color: #f92672">-</span><span style="color: #ae81ff">400</span><span style="color: #f8f8f2">,</span><span style="color: #ae81ff">0</span><span style="color: #f8f8f2">)</span>
+<span style="color: #f8f8f2">t</span><span style="color: #f92672">.</span><span style="color: #f8f8f2">goto(</span><span style="color: #ae81ff">400</span><span style="color: #f8f8f2">,</span><span style="color: #ae81ff">0</span><span style="color: #f8f8f2">)</span>
+<span style="color: #f8f8f2">t</span><span style="color: #f92672">.</span><span style="color: #f8f8f2">home()</span>
+<span style="color: #f8f8f2">t</span><span style="color: #f92672">.</span><span style="color: #f8f8f2">goto(</span><span style="color: #ae81ff">0</span><span style="color: #f8f8f2">,</span><span style="color: #f92672">-</span><span style="color: #ae81ff">400</span><span style="color: #f8f8f2">)</span>
+<span style="color: #f8f8f2">t</span><span style="color: #f92672">.</span><span style="color: #f8f8f2">goto(</span><span style="color: #ae81ff">0</span><span style="color: #f8f8f2">,</span><span style="color: #ae81ff">400</span><span style="color: #f8f8f2">)</span>
+<span style="color: #f8f8f2">t</span><span style="color: #f92672">.</span><span style="color: #f8f8f2">home()</span>
+<span style="color: #f8f8f2">t</span><span style="color: #f92672">.</span><span style="color: #f8f8f2">color(</span><span style="color: #e6db74">&quot;blue&quot;</span><span style="color: #f8f8f2">)</span>
+
+<span style="color: #f8f8f2">pen</span> <span style="color: #f92672">=</span> <span style="color: #f8f8f2">turtle</span><span style="color: #f92672">.</span><span style="color: #f8f8f2">Turtle()</span>
+<span style="color: #f8f8f2">pen</span><span style="color: #f92672">.</span><span style="color: #f8f8f2">color(</span><span style="color: #e6db74">&quot;blue&quot;</span><span style="color: #f8f8f2">)</span>
+<span style="color: #f8f8f2">pen</span><span style="color: #f92672">.</span><span style="color: #f8f8f2">penup()</span>
+<span style="color: #f8f8f2">pen</span><span style="color: #f92672">.</span><span style="color: #f8f8f2">ht()</span>
+<span style="color: #f8f8f2">pen</span><span style="color: #f92672">.</span><span style="color: #f8f8f2">goto(</span><span style="color: #ae81ff">0</span><span style="color: #f8f8f2">,</span><span style="color: #ae81ff">250</span><span style="color: #f8f8f2">)</span>
+
+<span style="color: #f8f8f2">pen</span><span style="color: #f92672">.</span><span style="color: #f8f8f2">write(</span><span style="color: #e6db74">&quot;Transformation on Square&quot;</span><span style="color: #f8f8f2">,align</span><span style="color: #f92672">=</span><span style="color: #e6db74">&quot;center&quot;</span><span style="color: #f8f8f2">,font</span><span style="color: #f92672">=</span><span style="color: #f8f8f2">(</span><span style="color: #e6db74">&quot;Verdana&quot;</span><span style="color: #f8f8f2">,</span> <span style="color: #ae81ff">20</span><span style="color: #f8f8f2">,</span> <span style="color: #e6db74">&quot;underline&quot;</span><span style="color: #f8f8f2">))</span>
+<span style="color: #f8f8f2">t</span><span style="color: #f92672">.</span><span style="color: #f8f8f2">shape(</span><span style="color: #e6db74">&quot;square&quot;</span><span style="color: #f8f8f2">)</span>
+<span style="color: #f8f8f2">sleep(</span><span style="color: #ae81ff">2.5</span><span style="color: #f8f8f2">)</span>
+
+<span style="color: #f8f8f2">pen</span><span style="color: #f92672">.</span><span style="color: #f8f8f2">goto(</span><span style="color: #f92672">-</span><span style="color: #ae81ff">300</span><span style="color: #f8f8f2">,</span><span style="color: #ae81ff">200</span><span style="color: #f8f8f2">)</span>
+<span style="color: #f8f8f2">pen</span><span style="color: #f92672">.</span><span style="color: #f8f8f2">write(</span><span style="color: #e6db74">&quot;-&gt; Rotation&quot;</span><span style="color: #f8f8f2">,font</span><span style="color: #f92672">=</span><span style="color: #f8f8f2">(</span><span style="color: #e6db74">&quot;Verdana&quot;</span><span style="color: #f8f8f2">,</span> <span style="color: #ae81ff">20</span><span style="color: #f8f8f2">,</span> <span style="color: #e6db74">&quot;normal&quot;</span><span style="color: #f8f8f2">))</span>
+<span style="color: #f8f8f2">sleep(</span><span style="color: #ae81ff">0.5</span><span style="color: #f8f8f2">)</span>
+<span style="color: #f8f8f2">t</span><span style="color: #f92672">.</span><span style="color: #f8f8f2">tilt(</span><span style="color: #ae81ff">45</span><span style="color: #f8f8f2">)</span>
+<span style="color: #f8f8f2">sleep(</span><span style="color: #ae81ff">2</span><span style="color: #f8f8f2">)</span>
+
+<span style="color: #f8f8f2">pen</span><span style="color: #f92672">.</span><span style="color: #f8f8f2">goto(</span><span style="color: #f92672">-</span><span style="color: #ae81ff">300</span><span style="color: #f8f8f2">,</span><span style="color: #ae81ff">160</span><span style="color: #f8f8f2">)</span>
+<span style="color: #f8f8f2">pen</span><span style="color: #f92672">.</span><span style="color: #f8f8f2">write(</span><span style="color: #e6db74">&quot;-&gt; Translation&quot;</span><span style="color: #f8f8f2">,font</span><span style="color: #f92672">=</span><span style="color: #f8f8f2">(</span><span style="color: #e6db74">&quot;Verdana&quot;</span><span style="color: #f8f8f2">,</span> <span style="color: #ae81ff">20</span><span style="color: #f8f8f2">,</span> <span style="color: #e6db74">&quot;normal&quot;</span><span style="color: #f8f8f2">))</span>
+<span style="color: #f8f8f2">t</span><span style="color: #f92672">.</span><span style="color: #f8f8f2">penup()</span>
+<span style="color: #f8f8f2">t</span><span style="color: #f92672">.</span><span style="color: #f8f8f2">goto(</span><span style="color: #ae81ff">150</span><span style="color: #f8f8f2">,</span><span style="color: #f92672">-</span><span style="color: #ae81ff">150</span><span style="color: #f8f8f2">)</span>
+<span style="color: #f8f8f2">t</span><span style="color: #f92672">.</span><span style="color: #f8f8f2">pendown()</span>
+<span style="color: #f8f8f2">sleep(</span><span style="color: #ae81ff">2</span><span style="color: #f8f8f2">)</span>
+
+<span style="color: #f8f8f2">x</span> <span style="color: #f92672">=</span> <span style="color: #f8f8f2">t</span><span style="color: #f92672">.</span><span style="color: #f8f8f2">clone()</span>
+
+<span style="color: #f8f8f2">pen</span><span style="color: #f92672">.</span><span style="color: #f8f8f2">goto(</span><span style="color: #f92672">-</span><span style="color: #ae81ff">300</span><span style="color: #f8f8f2">,</span><span style="color: #ae81ff">120</span><span style="color: #f8f8f2">)</span>
+<span style="color: #f8f8f2">pen</span><span style="color: #f92672">.</span><span style="color: #f8f8f2">write(</span><span style="color: #e6db74">&quot;-&gt; Scaling&quot;</span><span style="color: #f8f8f2">,font</span><span style="color: #f92672">=</span><span style="color: #f8f8f2">(</span><span style="color: #e6db74">&quot;Verdana&quot;</span><span style="color: #f8f8f2">,</span> <span style="color: #ae81ff">20</span><span style="color: #f8f8f2">,</span> <span style="color: #e6db74">&quot;normal&quot;</span><span style="color: #f8f8f2">))</span>
+<span style="color: #f8f8f2">t</span><span style="color: #f92672">.</span><span style="color: #f8f8f2">shapesize(</span><span style="color: #ae81ff">3</span><span style="color: #f8f8f2">,</span><span style="color: #ae81ff">2</span><span style="color: #f8f8f2">)</span>
+<span style="color: #f8f8f2">sleep(</span><span style="color: #ae81ff">2</span><span style="color: #f8f8f2">)</span>
+
+<span style="color: #f8f8f2">x</span><span style="color: #f92672">.</span><span style="color: #f8f8f2">shapesize(</span><span style="color: #ae81ff">3</span><span style="color: #f8f8f2">,</span><span style="color: #ae81ff">2</span><span style="color: #f8f8f2">)</span>
+
+<span style="color: #f8f8f2">t</span><span style="color: #f92672">.</span><span style="color: #f8f8f2">penup()</span>
+<span style="color: #f8f8f2">t</span><span style="color: #f92672">.</span><span style="color: #f8f8f2">goto(</span><span style="color: #ae81ff">150</span><span style="color: #f8f8f2">,</span><span style="color: #ae81ff">150</span><span style="color: #f8f8f2">)</span>
+<span style="color: #f8f8f2">t</span><span style="color: #f92672">.</span><span style="color: #f8f8f2">pendown()</span>
+
+<span style="color: #f8f8f2">pen</span><span style="color: #f92672">.</span><span style="color: #f8f8f2">goto(</span><span style="color: #f92672">-</span><span style="color: #ae81ff">300</span><span style="color: #f8f8f2">,</span><span style="color: #ae81ff">80</span><span style="color: #f8f8f2">)</span>
+<span style="color: #f8f8f2">pen</span><span style="color: #f92672">.</span><span style="color: #f8f8f2">write(</span><span style="color: #e6db74">&quot;-&gt; Reflection&quot;</span><span style="color: #f8f8f2">,font</span><span style="color: #f92672">=</span><span style="color: #f8f8f2">(</span><span style="color: #e6db74">&quot;Verdana&quot;</span><span style="color: #f8f8f2">,</span> <span style="color: #ae81ff">20</span><span style="color: #f8f8f2">,</span> <span style="color: #e6db74">&quot;normal&quot;</span><span style="color: #f8f8f2">))</span>
+<span style="color: #f8f8f2">t</span><span style="color: #f92672">.</span><span style="color: #f8f8f2">tilt(</span><span style="color: #ae81ff">90</span><span style="color: #f8f8f2">)</span>
+<span style="color: #f8f8f2">sleep(</span><span style="color: #ae81ff">2</span><span style="color: #f8f8f2">)</span>
+
+<span style="color: #f8f8f2">x</span><span style="color: #f92672">.</span><span style="color: #f8f8f2">ht()</span>
+
+<span style="color: #f8f8f2">pen</span><span style="color: #f92672">.</span><span style="color: #f8f8f2">goto(</span><span style="color: #f92672">-</span><span style="color: #ae81ff">300</span><span style="color: #f8f8f2">,</span><span style="color: #ae81ff">40</span><span style="color: #f8f8f2">)</span>
+<span style="color: #f8f8f2">pen</span><span style="color: #f92672">.</span><span style="color: #f8f8f2">write(</span><span style="color: #e6db74">&quot;-&gt; Shearing&quot;</span><span style="color: #f8f8f2">,font</span><span style="color: #f92672">=</span><span style="color: #f8f8f2">(</span><span style="color: #e6db74">&quot;Verdana&quot;</span><span style="color: #f8f8f2">,</span> <span style="color: #ae81ff">20</span><span style="color: #f8f8f2">,</span> <span style="color: #e6db74">&quot;normal&quot;</span><span style="color: #f8f8f2">))</span>
+<span style="color: #f8f8f2">t</span><span style="color: #f92672">.</span><span style="color: #f8f8f2">shearfactor(</span><span style="color: #f92672">-</span><span style="color: #ae81ff">4.5</span><span style="color: #f8f8f2">)</span>
+</pre>
+    </div>
+
+    <h1>10. Composition of Two Rotations <code><a href="https://repl.it/@dileepdodla/CompositionOfTwoRotations" target="_blank">▶</a></code></h1>
+    <div class="center">
+<pre style="margin: 0; line-height: 125%"><span style="color: #f92672">import</span> <span style="color: #f8f8f2">turtle</span>
+<span style="color: #f8f8f2">turtle</span><span style="color: #f92672">.</span><span style="color: #f8f8f2">title(</span><span style="color: #e6db74">&quot;Composition of Two Rotations&quot;</span><span style="color: #f8f8f2">)</span>
+
+<span style="color: #f8f8f2">screen</span> <span style="color: #f92672">=</span> <span style="color: #f8f8f2">turtle</span><span style="color: #f92672">.</span><span style="color: #f8f8f2">Screen()</span>
+<span style="color: #f8f8f2">screen</span><span style="color: #f92672">.</span><span style="color: #f8f8f2">bgcolor(</span><span style="color: #e6db74">&quot;black&quot;</span><span style="color: #f8f8f2">)</span>
+
+<span style="color: #f8f8f2">t</span> <span style="color: #f92672">=</span> <span style="color: #f8f8f2">turtle</span><span style="color: #f92672">.</span><span style="color: #f8f8f2">Turtle()</span>
+<span style="color: #f8f8f2">t</span><span style="color: #f92672">.</span><span style="color: #f8f8f2">speed(</span><span style="color: #e6db74">&quot;fastest&quot;</span><span style="color: #f8f8f2">)</span>
+<span style="color: #f8f8f2">t</span><span style="color: #f92672">.</span><span style="color: #f8f8f2">width(</span><span style="color: #ae81ff">10</span><span style="color: #f8f8f2">)</span>
+<span style="color: #f8f8f2">t</span><span style="color: #f92672">.</span><span style="color: #f8f8f2">color(</span><span style="color: #e6db74">&quot;red&quot;</span><span style="color: #f8f8f2">)</span>
+
+<span style="color: #f8f8f2">tt</span> <span style="color: #f92672">=</span> <span style="color: #f8f8f2">t</span><span style="color: #f92672">.</span><span style="color: #f8f8f2">clone()</span>
+<span style="color: #f8f8f2">tt</span><span style="color: #f92672">.</span><span style="color: #f8f8f2">color(</span><span style="color: #e6db74">&quot;blue&quot;</span><span style="color: #f8f8f2">)</span>
+
+<span style="color: #66d9ef">def</span> <span style="color: #a6e22e">drawObject</span><span style="color: #f8f8f2">():</span>
+    <span style="color: #66d9ef">for</span> <span style="color: #f8f8f2">i</span> <span style="color: #f92672">in</span> <span style="color: #f8f8f2">range(</span><span style="color: #ae81ff">10</span><span style="color: #f8f8f2">):</span> 
+        <span style="color: #f8f8f2">t</span><span style="color: #f92672">.</span><span style="color: #f8f8f2">forward(</span><span style="color: #ae81ff">143</span><span style="color: #f8f8f2">)</span>
+        <span style="color: #f8f8f2">tt</span><span style="color: #f92672">.</span><span style="color: #f8f8f2">forward(</span><span style="color: #ae81ff">143</span><span style="color: #f8f8f2">)</span>
+        <span style="color: #f8f8f2">t</span><span style="color: #f92672">.</span><span style="color: #f8f8f2">right(</span><span style="color: #ae81ff">144</span><span style="color: #f8f8f2">)</span>
+        <span style="color: #f8f8f2">tt</span><span style="color: #f92672">.</span><span style="color: #f8f8f2">right(</span><span style="color: #ae81ff">144</span><span style="color: #f8f8f2">)</span>
+
+<span style="color: #66d9ef">def</span> <span style="color: #a6e22e">rotate</span><span style="color: #f8f8f2">(deg):</span>
+    <span style="color: #f8f8f2">t</span><span style="color: #f92672">.</span><span style="color: #f8f8f2">right(deg)</span>
+    <span style="color: #f8f8f2">tt</span><span style="color: #f92672">.</span><span style="color: #f8f8f2">left(deg</span><span style="color: #f92672">+</span><span style="color: #ae81ff">10</span><span style="color: #f8f8f2">)</span>
+
+<span style="color: #66d9ef">while</span> <span style="color: #f8f8f2">True:</span>
+    <span style="color: #f8f8f2">t</span><span style="color: #f92672">.</span><span style="color: #f8f8f2">hideturtle()</span>
+    <span style="color: #f8f8f2">tt</span><span style="color: #f92672">.</span><span style="color: #f8f8f2">hideturtle()</span>
+    <span style="color: #f8f8f2">t</span><span style="color: #f92672">.</span><span style="color: #f8f8f2">clear()</span>
+    <span style="color: #f8f8f2">tt</span><span style="color: #f92672">.</span><span style="color: #f8f8f2">clear()</span>
+    <span style="color: #f8f8f2">drawObject()</span>
+    <span style="color: #f8f8f2">rotate(</span><span style="color: #ae81ff">45</span><span style="color: #f8f8f2">)</span>
+    <span style="color: #f8f8f2">screen</span><span style="color: #f92672">.</span><span style="color: #f8f8f2">delay(</span><span style="color: #ae81ff">1</span><span style="color: #f8f8f2">)</span>
+</pre>
+    </div>
+
+    <h1>11. Cohen-Sutherland Line Clipping <code><a href="https://repl.it/@dileepdodla/CohenSutherlandLineClipping" target="_blank">▶</a></code></h1>
+    <div class="center">
+<pre style="margin: 0; line-height: 125%"><span style="color: #f92672">from</span> <span style="color: #f8f8f2">time</span> <span style="color: #f92672">import</span> <span style="color: #f8f8f2">sleep</span>
+<span style="color: #f92672">import</span> <span style="color: #f8f8f2">turtle</span>
+<span style="color: #f8f8f2">turtle</span><span style="color: #f92672">.</span><span style="color: #f8f8f2">title(</span><span style="color: #e6db74">&quot;Cohen-Sutherland Line Clipping&quot;</span><span style="color: #f8f8f2">)</span>
+
+<span style="color: #f8f8f2">screen</span> <span style="color: #f92672">=</span> <span style="color: #f8f8f2">turtle</span><span style="color: #f92672">.</span><span style="color: #f8f8f2">Screen()</span>
+<span style="color: #f8f8f2">screen</span><span style="color: #f92672">.</span><span style="color: #f8f8f2">bgcolor(</span><span style="color: #e6db74">&quot;black&quot;</span><span style="color: #f8f8f2">)</span>
+
+<span style="color: #f8f8f2">t</span> <span style="color: #f92672">=</span> <span style="color: #f8f8f2">turtle</span><span style="color: #f92672">.</span><span style="color: #f8f8f2">Turtle()</span>
+<span style="color: #f8f8f2">t</span><span style="color: #f92672">.</span><span style="color: #f8f8f2">speed(</span><span style="color: #e6db74">&quot;fastest&quot;</span><span style="color: #f8f8f2">)</span>
+<span style="color: #f8f8f2">t</span><span style="color: #f92672">.</span><span style="color: #f8f8f2">width(</span><span style="color: #ae81ff">1</span><span style="color: #f8f8f2">)</span>
+<span style="color: #f8f8f2">t</span><span style="color: #f92672">.</span><span style="color: #f8f8f2">ht()</span>
+
+<span style="color: #66d9ef">def</span> <span style="color: #a6e22e">write</span><span style="color: #f8f8f2">(text):</span>
+    <span style="color: #f8f8f2">t</span><span style="color: #f92672">.</span><span style="color: #f8f8f2">color(</span><span style="color: #e6db74">&quot;deepskyblue&quot;</span><span style="color: #f8f8f2">)</span>
+    <span style="color: #f8f8f2">t</span><span style="color: #f92672">.</span><span style="color: #f8f8f2">penup()</span>
+    <span style="color: #f8f8f2">t</span><span style="color: #f92672">.</span><span style="color: #f8f8f2">goto(</span><span style="color: #ae81ff">0</span><span style="color: #f8f8f2">,</span><span style="color: #ae81ff">200</span><span style="color: #f8f8f2">)</span>
+    <span style="color: #f8f8f2">t</span><span style="color: #f92672">.</span><span style="color: #f8f8f2">write(text,align</span><span style="color: #f92672">=</span><span style="color: #e6db74">&quot;center&quot;</span><span style="color: #f8f8f2">,font</span><span style="color: #f92672">=</span><span style="color: #f8f8f2">(</span><span style="color: #e6db74">&quot;Verdana&quot;</span><span style="color: #f8f8f2">,</span><span style="color: #ae81ff">20</span><span style="color: #f8f8f2">,</span><span style="color: #e6db74">&quot;normal&quot;</span><span style="color: #f8f8f2">))</span>
+    
+<span style="color: #66d9ef">def</span> <span style="color: #a6e22e">drawLine</span><span style="color: #f8f8f2">(x1,</span> <span style="color: #f8f8f2">y1,</span> <span style="color: #f8f8f2">x2,</span> <span style="color: #f8f8f2">y2):</span>    
+    <span style="color: #f8f8f2">t</span><span style="color: #f92672">.</span><span style="color: #f8f8f2">penup()</span>
+    <span style="color: #f8f8f2">t</span><span style="color: #f92672">.</span><span style="color: #f8f8f2">goto(x1,y1)</span>
+    <span style="color: #f8f8f2">t</span><span style="color: #f92672">.</span><span style="color: #f8f8f2">pendown()</span>
+    <span style="color: #f8f8f2">t</span><span style="color: #f92672">.</span><span style="color: #f8f8f2">goto(x2,y2)</span>
+
+<span style="color: #f8f8f2">write(</span><span style="color: #e6db74">&quot;Before Clipping&quot;</span><span style="color: #f8f8f2">)</span>
+<span style="color: #f8f8f2">w</span> <span style="color: #f92672">=</span> <span style="color: #f8f8f2">t</span><span style="color: #f92672">.</span><span style="color: #f8f8f2">clone()</span>
+
+<span style="color: #f8f8f2">INSIDE</span> <span style="color: #f92672">=</span> <span style="color: #ae81ff">0</span>  <span style="color: #75715e">#0000 </span>
+<span style="color: #f8f8f2">LEFT</span> <span style="color: #f92672">=</span> <span style="color: #ae81ff">1</span>    <span style="color: #75715e">#0001 </span>
+<span style="color: #f8f8f2">RIGHT</span> <span style="color: #f92672">=</span> <span style="color: #ae81ff">2</span>   <span style="color: #75715e">#0010 </span>
+<span style="color: #f8f8f2">BOTTOM</span> <span style="color: #f92672">=</span> <span style="color: #ae81ff">4</span>  <span style="color: #75715e">#0100 </span>
+<span style="color: #f8f8f2">TOP</span> <span style="color: #f92672">=</span> <span style="color: #ae81ff">8</span>     <span style="color: #75715e">#1000</span>
+  
+<span style="color: #75715e"># Clip Window coords</span>
+<span style="color: #f8f8f2">x_max</span> <span style="color: #f92672">=</span> <span style="color: #ae81ff">140.0</span>
+<span style="color: #f8f8f2">y_max</span> <span style="color: #f92672">=</span> <span style="color: #ae81ff">140.0</span>
+<span style="color: #f8f8f2">x_min</span> <span style="color: #f92672">=</span> <span style="color: #f92672">-</span><span style="color: #ae81ff">140.0</span>
+<span style="color: #f8f8f2">y_min</span> <span style="color: #f92672">=</span> <span style="color: #f92672">-</span><span style="color: #ae81ff">140.0</span>
+
+<span style="color: #f8f8f2">w</span><span style="color: #f92672">.</span><span style="color: #f8f8f2">color(</span><span style="color: #e6db74">&quot;white&quot;</span><span style="color: #f8f8f2">)</span>
+<span style="color: #f8f8f2">w</span><span style="color: #f92672">.</span><span style="color: #f8f8f2">penup()</span>
+<span style="color: #f8f8f2">w</span><span style="color: #f92672">.</span><span style="color: #f8f8f2">goto(x_min,y_min)</span>
+<span style="color: #f8f8f2">w</span><span style="color: #f92672">.</span><span style="color: #f8f8f2">pendown()</span>
+<span style="color: #f8f8f2">w</span><span style="color: #f92672">.</span><span style="color: #f8f8f2">goto(x_min,y_max)</span>
+<span style="color: #f8f8f2">w</span><span style="color: #f92672">.</span><span style="color: #f8f8f2">goto(x_max,y_max)</span>
+<span style="color: #f8f8f2">w</span><span style="color: #f92672">.</span><span style="color: #f8f8f2">goto(x_max,y_min)</span>
+<span style="color: #f8f8f2">w</span><span style="color: #f92672">.</span><span style="color: #f8f8f2">goto(x_min,y_min)</span>
+
+<span style="color: #66d9ef">def</span> <span style="color: #a6e22e">computeCode</span><span style="color: #f8f8f2">(x,</span> <span style="color: #f8f8f2">y):</span> 
+
+    <span style="color: #f8f8f2">code</span> <span style="color: #f92672">=</span> <span style="color: #f8f8f2">INSIDE</span> 
+    <span style="color: #66d9ef">if</span> <span style="color: #f8f8f2">x</span> <span style="color: #f92672">&lt;</span> <span style="color: #f8f8f2">x_min:</span>      
+        <span style="color: #f8f8f2">code</span> <span style="color: #f92672">|=</span> <span style="color: #f8f8f2">LEFT</span> 
+    <span style="color: #66d9ef">elif</span> <span style="color: #f8f8f2">x</span> <span style="color: #f92672">&gt;</span> <span style="color: #f8f8f2">x_max:</span>    
+        <span style="color: #f8f8f2">code</span> <span style="color: #f92672">|=</span> <span style="color: #f8f8f2">RIGHT</span> 
+    <span style="color: #66d9ef">if</span> <span style="color: #f8f8f2">y</span> <span style="color: #f92672">&lt;</span> <span style="color: #f8f8f2">y_min:</span>      
+        <span style="color: #f8f8f2">code</span> <span style="color: #f92672">|=</span> <span style="color: #f8f8f2">BOTTOM</span> 
+    <span style="color: #66d9ef">elif</span> <span style="color: #f8f8f2">y</span> <span style="color: #f92672">&gt;</span> <span style="color: #f8f8f2">y_max:</span>    
+        <span style="color: #f8f8f2">code</span> <span style="color: #f92672">|=</span> <span style="color: #f8f8f2">TOP</span> 
+  
+    <span style="color: #66d9ef">return</span> <span style="color: #f8f8f2">code</span> 
+  
+<span style="color: #66d9ef">def</span> <span style="color: #a6e22e">cohenSutherlandClip</span><span style="color: #f8f8f2">(x1,</span> <span style="color: #f8f8f2">y1,</span> <span style="color: #f8f8f2">x2,</span> <span style="color: #f8f8f2">y2):</span> 
+  
+    <span style="color: #f8f8f2">code1</span> <span style="color: #f92672">=</span> <span style="color: #f8f8f2">computeCode(x1,</span> <span style="color: #f8f8f2">y1)</span> 
+    <span style="color: #f8f8f2">code2</span> <span style="color: #f92672">=</span> <span style="color: #f8f8f2">computeCode(x2,</span> <span style="color: #f8f8f2">y2)</span> 
+    <span style="color: #f8f8f2">accept</span> <span style="color: #f92672">=</span> <span style="color: #f8f8f2">False</span>
+  
+    <span style="color: #66d9ef">while</span> <span style="color: #f8f8f2">True:</span> 
+  
+        <span style="color: #66d9ef">if</span> <span style="color: #f8f8f2">code1</span> <span style="color: #f92672">==</span> <span style="color: #ae81ff">0</span> <span style="color: #f92672">and</span> <span style="color: #f8f8f2">code2</span> <span style="color: #f92672">==</span> <span style="color: #ae81ff">0</span><span style="color: #f8f8f2">:</span> 
+            <span style="color: #f8f8f2">accept</span> <span style="color: #f92672">=</span> <span style="color: #f8f8f2">True</span>
+            <span style="color: #66d9ef">break</span>
+  
+        <span style="color: #66d9ef">elif</span> <span style="color: #f8f8f2">(code1</span> <span style="color: #f92672">&amp;</span> <span style="color: #f8f8f2">code2)</span> <span style="color: #f92672">!=</span> <span style="color: #ae81ff">0</span><span style="color: #f8f8f2">:</span> 
+            <span style="color: #66d9ef">break</span>
+  
+        <span style="color: #66d9ef">else</span><span style="color: #f8f8f2">:</span>
+         
+            <span style="color: #f8f8f2">x,</span> <span style="color: #f8f8f2">y</span> <span style="color: #f92672">=</span> <span style="color: #ae81ff">1.0</span><span style="color: #f8f8f2">,</span> <span style="color: #ae81ff">1.0</span>
+            
+            <span style="color: #66d9ef">if</span> <span style="color: #f8f8f2">code1</span> <span style="color: #f92672">!=</span> <span style="color: #ae81ff">0</span><span style="color: #f8f8f2">:</span> 
+                <span style="color: #f8f8f2">code_out</span> <span style="color: #f92672">=</span> <span style="color: #f8f8f2">code1</span> 
+            <span style="color: #66d9ef">else</span><span style="color: #f8f8f2">:</span> 
+                <span style="color: #f8f8f2">code_out</span> <span style="color: #f92672">=</span> <span style="color: #f8f8f2">code2</span> 
+            
+            <span style="color: #66d9ef">if</span> <span style="color: #f8f8f2">code_out</span> <span style="color: #f92672">&amp;</span> <span style="color: #f8f8f2">TOP:</span> 
+                <span style="color: #f8f8f2">x</span> <span style="color: #f92672">=</span> <span style="color: #f8f8f2">x1</span> <span style="color: #f92672">+</span> <span style="color: #f8f8f2">(x2</span> <span style="color: #f92672">-</span> <span style="color: #f8f8f2">x1)</span> <span style="color: #f92672">*</span> <span style="color: #f8f8f2">(y_max</span> <span style="color: #f92672">-</span> <span style="color: #f8f8f2">y1)</span> <span style="color: #f92672">/</span> <span style="color: #f8f8f2">(y2</span> <span style="color: #f92672">-</span> <span style="color: #f8f8f2">y1)</span> 
+                <span style="color: #f8f8f2">y</span> <span style="color: #f92672">=</span> <span style="color: #f8f8f2">y_max</span> 
+  
+            <span style="color: #66d9ef">elif</span> <span style="color: #f8f8f2">code_out</span> <span style="color: #f92672">&amp;</span> <span style="color: #f8f8f2">BOTTOM:</span> 
+                <span style="color: #f8f8f2">x</span> <span style="color: #f92672">=</span> <span style="color: #f8f8f2">x1</span> <span style="color: #f92672">+</span> <span style="color: #f8f8f2">(x2</span> <span style="color: #f92672">-</span> <span style="color: #f8f8f2">x1)</span> <span style="color: #f92672">*</span> <span style="color: #f8f8f2">(y_min</span> <span style="color: #f92672">-</span> <span style="color: #f8f8f2">y1)</span> <span style="color: #f92672">/</span> <span style="color: #f8f8f2">(y2</span> <span style="color: #f92672">-</span> <span style="color: #f8f8f2">y1)</span> 
+                <span style="color: #f8f8f2">y</span> <span style="color: #f92672">=</span> <span style="color: #f8f8f2">y_min</span> 
+  
+            <span style="color: #66d9ef">elif</span> <span style="color: #f8f8f2">code_out</span> <span style="color: #f92672">&amp;</span> <span style="color: #f8f8f2">RIGHT:</span> 
+                <span style="color: #f8f8f2">y</span> <span style="color: #f92672">=</span> <span style="color: #f8f8f2">y1</span> <span style="color: #f92672">+</span> <span style="color: #f8f8f2">(y2</span> <span style="color: #f92672">-</span> <span style="color: #f8f8f2">y1)</span> <span style="color: #f92672">*</span> <span style="color: #f8f8f2">(x_max</span> <span style="color: #f92672">-</span> <span style="color: #f8f8f2">x1)</span> <span style="color: #f92672">/</span> <span style="color: #f8f8f2">(x2</span> <span style="color: #f92672">-</span> <span style="color: #f8f8f2">x1)</span> 
+                <span style="color: #f8f8f2">x</span> <span style="color: #f92672">=</span> <span style="color: #f8f8f2">x_max</span> 
+  
+            <span style="color: #66d9ef">elif</span> <span style="color: #f8f8f2">code_out</span> <span style="color: #f92672">&amp;</span> <span style="color: #f8f8f2">LEFT:</span> 
+                <span style="color: #f8f8f2">y</span> <span style="color: #f92672">=</span> <span style="color: #f8f8f2">y1</span> <span style="color: #f92672">+</span> <span style="color: #f8f8f2">(y2</span> <span style="color: #f92672">-</span> <span style="color: #f8f8f2">y1)</span> <span style="color: #f92672">*</span> <span style="color: #f8f8f2">(x_min</span> <span style="color: #f92672">-</span> <span style="color: #f8f8f2">x1)</span> <span style="color: #f92672">/</span> <span style="color: #f8f8f2">(x2</span> <span style="color: #f92672">-</span> <span style="color: #f8f8f2">x1)</span> 
+                <span style="color: #f8f8f2">x</span> <span style="color: #f92672">=</span> <span style="color: #f8f8f2">x_min</span> 
+  
+            <span style="color: #66d9ef">if</span> <span style="color: #f8f8f2">code_out</span> <span style="color: #f92672">==</span> <span style="color: #f8f8f2">code1:</span> 
+                <span style="color: #f8f8f2">x1,y1</span> <span style="color: #f92672">=</span> <span style="color: #f8f8f2">x,y</span> 
+                <span style="color: #f8f8f2">code1</span> <span style="color: #f92672">=</span> <span style="color: #f8f8f2">computeCode(x1,y1)</span> 
+  
+            <span style="color: #66d9ef">else</span><span style="color: #f8f8f2">:</span> 
+                <span style="color: #f8f8f2">x2,y2</span> <span style="color: #f92672">=</span> <span style="color: #f8f8f2">x,y</span> 
+                <span style="color: #f8f8f2">code2</span> <span style="color: #f92672">=</span> <span style="color: #f8f8f2">computeCode(x2,</span> <span style="color: #f8f8f2">y2)</span> 
+  
+    <span style="color: #66d9ef">if</span> <span style="color: #f8f8f2">accept:</span>  
+        <span style="color: #f8f8f2">drawLine(x1,y1,x2,y2)</span>
+  
+    <span style="color: #66d9ef">else</span><span style="color: #f8f8f2">:</span> 
+        <span style="color: #66d9ef">pass</span>
+      
+<span style="color: #f8f8f2">t</span><span style="color: #f92672">.</span><span style="color: #f8f8f2">color(</span><span style="color: #e6db74">&quot;red&quot;</span><span style="color: #f8f8f2">)</span>
+
+<span style="color: #f8f8f2">coords</span> <span style="color: #f92672">=</span> <span style="color: #f8f8f2">[</span> <span style="color: #f8f8f2">(</span><span style="color: #f92672">-</span><span style="color: #ae81ff">150</span><span style="color: #f8f8f2">,</span><span style="color: #f92672">-</span><span style="color: #ae81ff">130</span><span style="color: #f8f8f2">,</span><span style="color: #f92672">-</span><span style="color: #ae81ff">200</span><span style="color: #f8f8f2">,</span><span style="color: #ae81ff">50</span><span style="color: #f8f8f2">),</span>
+          <span style="color: #f8f8f2">(</span><span style="color: #f92672">-</span><span style="color: #ae81ff">150</span><span style="color: #f8f8f2">,</span><span style="color: #f92672">-</span><span style="color: #ae81ff">20</span><span style="color: #f8f8f2">,</span><span style="color: #f92672">-</span><span style="color: #ae81ff">50</span><span style="color: #f8f8f2">,</span><span style="color: #ae81ff">180</span><span style="color: #f8f8f2">),</span>
+          <span style="color: #f8f8f2">(</span><span style="color: #ae81ff">0</span><span style="color: #f8f8f2">,</span><span style="color: #f92672">-</span><span style="color: #ae81ff">50</span><span style="color: #f8f8f2">,</span><span style="color: #f92672">-</span><span style="color: #ae81ff">50</span><span style="color: #f8f8f2">,</span><span style="color: #ae81ff">50</span><span style="color: #f8f8f2">),</span>
+          <span style="color: #f8f8f2">(</span><span style="color: #ae81ff">50</span><span style="color: #f8f8f2">,</span><span style="color: #ae81ff">20</span><span style="color: #f8f8f2">,</span><span style="color: #ae81ff">100</span><span style="color: #f8f8f2">,</span><span style="color: #f92672">-</span><span style="color: #ae81ff">180</span><span style="color: #f8f8f2">),</span>
+          <span style="color: #f8f8f2">(</span><span style="color: #ae81ff">80</span><span style="color: #f8f8f2">,</span><span style="color: #ae81ff">100</span><span style="color: #f8f8f2">,</span><span style="color: #ae81ff">200</span><span style="color: #f8f8f2">,</span><span style="color: #ae81ff">100</span><span style="color: #f8f8f2">)</span> <span style="color: #f8f8f2">]</span>
+
+<span style="color: #66d9ef">for</span> <span style="color: #f8f8f2">point</span> <span style="color: #f92672">in</span> <span style="color: #f8f8f2">coords:</span>
+    <span style="color: #f8f8f2">drawLine(point[</span><span style="color: #ae81ff">0</span><span style="color: #f8f8f2">],</span> <span style="color: #f8f8f2">point[</span><span style="color: #ae81ff">1</span><span style="color: #f8f8f2">],</span> <span style="color: #f8f8f2">point[</span><span style="color: #ae81ff">2</span><span style="color: #f8f8f2">],</span> <span style="color: #f8f8f2">point[</span><span style="color: #ae81ff">3</span><span style="color: #f8f8f2">])</span>
+
+<span style="color: #f8f8f2">sleep(</span><span style="color: #ae81ff">4</span><span style="color: #f8f8f2">)</span>
+<span style="color: #f8f8f2">t</span><span style="color: #f92672">.</span><span style="color: #f8f8f2">clear()</span>
+
+<span style="color: #f8f8f2">write(</span><span style="color: #e6db74">&quot;After Clipping&quot;</span><span style="color: #f8f8f2">)</span>
+
+<span style="color: #f8f8f2">t</span><span style="color: #f92672">.</span><span style="color: #f8f8f2">color(</span><span style="color: #e6db74">&quot;red&quot;</span><span style="color: #f8f8f2">)</span>
+<span style="color: #66d9ef">for</span> <span style="color: #f8f8f2">point</span> <span style="color: #f92672">in</span> <span style="color: #f8f8f2">coords:</span>
+    <span style="color: #f8f8f2">cohenSutherlandClip(point[</span><span style="color: #ae81ff">0</span><span style="color: #f8f8f2">],</span> <span style="color: #f8f8f2">point[</span><span style="color: #ae81ff">1</span><span style="color: #f8f8f2">],</span> <span style="color: #f8f8f2">point[</span><span style="color: #ae81ff">2</span><span style="color: #f8f8f2">],</span> <span style="color: #f8f8f2">point[</span><span style="color: #ae81ff">3</span><span style="color: #f8f8f2">])</span>
+</pre>
+    </div>
+
+    <h1>12. Sutherland-Hodgman Polygon Clipping <code><a href="https://repl.it/@dileepdodla/SutherlandHodgmanPolygonClipping" target="_blank">▶</a></code></h1>
+    <div class="center">
+<pre style="margin: 0; line-height: 125%"><span style="color: #f92672">from</span> <span style="color: #f8f8f2">time</span> <span style="color: #f92672">import</span> <span style="color: #f8f8f2">sleep</span>
+<span style="color: #f92672">import</span> <span style="color: #f8f8f2">turtle</span>
+<span style="color: #f8f8f2">turtle</span><span style="color: #f92672">.</span><span style="color: #f8f8f2">title(</span><span style="color: #e6db74">&quot;Sutherland-Hodgman Polygon Clipping&quot;</span><span style="color: #f8f8f2">)</span>
+
+<span style="color: #f8f8f2">screen</span> <span style="color: #f92672">=</span> <span style="color: #f8f8f2">turtle</span><span style="color: #f92672">.</span><span style="color: #f8f8f2">Screen()</span>
+<span style="color: #f8f8f2">screen</span><span style="color: #f92672">.</span><span style="color: #f8f8f2">bgcolor(</span><span style="color: #e6db74">&quot;black&quot;</span><span style="color: #f8f8f2">)</span>
+
+<span style="color: #f8f8f2">t</span> <span style="color: #f92672">=</span> <span style="color: #f8f8f2">turtle</span><span style="color: #f92672">.</span><span style="color: #f8f8f2">Turtle()</span>
+<span style="color: #f8f8f2">t</span><span style="color: #f92672">.</span><span style="color: #f8f8f2">speed(</span><span style="color: #e6db74">&quot;fastest&quot;</span><span style="color: #f8f8f2">)</span>
+
+<span style="color: #66d9ef">def</span> <span style="color: #a6e22e">clip</span><span style="color: #f8f8f2">(subjectPolygon,</span> <span style="color: #f8f8f2">clipPolygon):</span>
+   
+   <span style="color: #66d9ef">def</span> <span style="color: #a6e22e">inside</span><span style="color: #f8f8f2">(p):</span>
+      <span style="color: #66d9ef">return</span><span style="color: #f8f8f2">(cp2[</span><span style="color: #ae81ff">0</span><span style="color: #f8f8f2">]</span><span style="color: #f92672">-</span><span style="color: #f8f8f2">cp1[</span><span style="color: #ae81ff">0</span><span style="color: #f8f8f2">])</span><span style="color: #f92672">*</span><span style="color: #f8f8f2">(p[</span><span style="color: #ae81ff">1</span><span style="color: #f8f8f2">]</span><span style="color: #f92672">-</span><span style="color: #f8f8f2">cp1[</span><span style="color: #ae81ff">1</span><span style="color: #f8f8f2">])</span> <span style="color: #f92672">&gt;</span> <span style="color: #f8f8f2">(cp2[</span><span style="color: #ae81ff">1</span><span style="color: #f8f8f2">]</span><span style="color: #f92672">-</span><span style="color: #f8f8f2">cp1[</span><span style="color: #ae81ff">1</span><span style="color: #f8f8f2">])</span><span style="color: #f92672">*</span><span style="color: #f8f8f2">(p[</span><span style="color: #ae81ff">0</span><span style="color: #f8f8f2">]</span><span style="color: #f92672">-</span><span style="color: #f8f8f2">cp1[</span><span style="color: #ae81ff">0</span><span style="color: #f8f8f2">])</span>
+ 
+   <span style="color: #66d9ef">def</span> <span style="color: #a6e22e">computeIntersection</span><span style="color: #f8f8f2">():</span>
+      <span style="color: #f8f8f2">dc</span> <span style="color: #f92672">=</span> <span style="color: #f8f8f2">[</span> <span style="color: #f8f8f2">cp1[</span><span style="color: #ae81ff">0</span><span style="color: #f8f8f2">]</span> <span style="color: #f92672">-</span> <span style="color: #f8f8f2">cp2[</span><span style="color: #ae81ff">0</span><span style="color: #f8f8f2">],</span> <span style="color: #f8f8f2">cp1[</span><span style="color: #ae81ff">1</span><span style="color: #f8f8f2">]</span> <span style="color: #f92672">-</span> <span style="color: #f8f8f2">cp2[</span><span style="color: #ae81ff">1</span><span style="color: #f8f8f2">]</span> <span style="color: #f8f8f2">]</span>
+      <span style="color: #f8f8f2">dp</span> <span style="color: #f92672">=</span> <span style="color: #f8f8f2">[</span> <span style="color: #f8f8f2">s[</span><span style="color: #ae81ff">0</span><span style="color: #f8f8f2">]</span> <span style="color: #f92672">-</span> <span style="color: #f8f8f2">e[</span><span style="color: #ae81ff">0</span><span style="color: #f8f8f2">],</span> <span style="color: #f8f8f2">s[</span><span style="color: #ae81ff">1</span><span style="color: #f8f8f2">]</span> <span style="color: #f92672">-</span> <span style="color: #f8f8f2">e[</span><span style="color: #ae81ff">1</span><span style="color: #f8f8f2">]</span> <span style="color: #f8f8f2">]</span>
+      <span style="color: #f8f8f2">n1</span> <span style="color: #f92672">=</span> <span style="color: #f8f8f2">cp1[</span><span style="color: #ae81ff">0</span><span style="color: #f8f8f2">]</span> <span style="color: #f92672">*</span> <span style="color: #f8f8f2">cp2[</span><span style="color: #ae81ff">1</span><span style="color: #f8f8f2">]</span> <span style="color: #f92672">-</span> <span style="color: #f8f8f2">cp1[</span><span style="color: #ae81ff">1</span><span style="color: #f8f8f2">]</span> <span style="color: #f92672">*</span> <span style="color: #f8f8f2">cp2[</span><span style="color: #ae81ff">0</span><span style="color: #f8f8f2">]</span>
+      <span style="color: #f8f8f2">n2</span> <span style="color: #f92672">=</span> <span style="color: #f8f8f2">s[</span><span style="color: #ae81ff">0</span><span style="color: #f8f8f2">]</span> <span style="color: #f92672">*</span> <span style="color: #f8f8f2">e[</span><span style="color: #ae81ff">1</span><span style="color: #f8f8f2">]</span> <span style="color: #f92672">-</span> <span style="color: #f8f8f2">s[</span><span style="color: #ae81ff">1</span><span style="color: #f8f8f2">]</span> <span style="color: #f92672">*</span> <span style="color: #f8f8f2">e[</span><span style="color: #ae81ff">0</span><span style="color: #f8f8f2">]</span> 
+      <span style="color: #f8f8f2">n3</span> <span style="color: #f92672">=</span> <span style="color: #ae81ff">1.0</span> <span style="color: #f92672">/</span> <span style="color: #f8f8f2">(dc[</span><span style="color: #ae81ff">0</span><span style="color: #f8f8f2">]</span> <span style="color: #f92672">*</span> <span style="color: #f8f8f2">dp[</span><span style="color: #ae81ff">1</span><span style="color: #f8f8f2">]</span> <span style="color: #f92672">-</span> <span style="color: #f8f8f2">dc[</span><span style="color: #ae81ff">1</span><span style="color: #f8f8f2">]</span> <span style="color: #f92672">*</span> <span style="color: #f8f8f2">dp[</span><span style="color: #ae81ff">0</span><span style="color: #f8f8f2">])</span>
+      <span style="color: #66d9ef">return</span> <span style="color: #f8f8f2">[(n1</span><span style="color: #f92672">*</span><span style="color: #f8f8f2">dp[</span><span style="color: #ae81ff">0</span><span style="color: #f8f8f2">]</span> <span style="color: #f92672">-</span> <span style="color: #f8f8f2">n2</span><span style="color: #f92672">*</span><span style="color: #f8f8f2">dc[</span><span style="color: #ae81ff">0</span><span style="color: #f8f8f2">])</span> <span style="color: #f92672">*</span> <span style="color: #f8f8f2">n3,</span> <span style="color: #f8f8f2">(n1</span><span style="color: #f92672">*</span><span style="color: #f8f8f2">dp[</span><span style="color: #ae81ff">1</span><span style="color: #f8f8f2">]</span> <span style="color: #f92672">-</span> <span style="color: #f8f8f2">n2</span><span style="color: #f92672">*</span><span style="color: #f8f8f2">dc[</span><span style="color: #ae81ff">1</span><span style="color: #f8f8f2">])</span> <span style="color: #f92672">*</span> <span style="color: #f8f8f2">n3]</span>
+ 
+   <span style="color: #f8f8f2">outputList</span> <span style="color: #f92672">=</span> <span style="color: #f8f8f2">subjectPolygon</span>
+   <span style="color: #f8f8f2">cp1</span> <span style="color: #f92672">=</span> <span style="color: #f8f8f2">clipPolygon[</span><span style="color: #f92672">-</span><span style="color: #ae81ff">1</span><span style="color: #f8f8f2">]</span>
+ 
+   <span style="color: #66d9ef">for</span> <span style="color: #f8f8f2">clipVertex</span> <span style="color: #f92672">in</span> <span style="color: #f8f8f2">clipPolygon:</span>
+      <span style="color: #f8f8f2">cp2</span> <span style="color: #f92672">=</span> <span style="color: #f8f8f2">clipVertex</span>
+      <span style="color: #f8f8f2">inputList</span> <span style="color: #f92672">=</span> <span style="color: #f8f8f2">outputList</span>
+      <span style="color: #f8f8f2">outputList</span> <span style="color: #f92672">=</span> <span style="color: #f8f8f2">[]</span>
+      <span style="color: #f8f8f2">s</span> <span style="color: #f92672">=</span> <span style="color: #f8f8f2">inputList[</span><span style="color: #f92672">-</span><span style="color: #ae81ff">1</span><span style="color: #f8f8f2">]</span>
+ 
+      <span style="color: #66d9ef">for</span> <span style="color: #f8f8f2">subjectVertex</span> <span style="color: #f92672">in</span> <span style="color: #f8f8f2">inputList:</span>
+         <span style="color: #f8f8f2">e</span> <span style="color: #f92672">=</span> <span style="color: #f8f8f2">subjectVertex</span>
+         <span style="color: #66d9ef">if</span> <span style="color: #f8f8f2">inside(e):</span>
+            <span style="color: #66d9ef">if</span> <span style="color: #f92672">not</span> <span style="color: #f8f8f2">inside(s):</span>
+               <span style="color: #f8f8f2">outputList</span><span style="color: #f92672">.</span><span style="color: #f8f8f2">append(computeIntersection())</span>
+            <span style="color: #f8f8f2">outputList</span><span style="color: #f92672">.</span><span style="color: #f8f8f2">append(e)</span>
+         <span style="color: #66d9ef">elif</span> <span style="color: #f8f8f2">inside(s):</span>
+            <span style="color: #f8f8f2">outputList</span><span style="color: #f92672">.</span><span style="color: #f8f8f2">append(computeIntersection())</span>
+         <span style="color: #f8f8f2">s</span> <span style="color: #f92672">=</span> <span style="color: #f8f8f2">e</span>
+      <span style="color: #f8f8f2">cp1</span> <span style="color: #f92672">=</span> <span style="color: #f8f8f2">cp2</span>
+   <span style="color: #66d9ef">return</span><span style="color: #f8f8f2">(outputList)</span>
+
+<span style="color: #66d9ef">def</span> <span style="color: #a6e22e">goto</span><span style="color: #f8f8f2">(p):</span>
+    <span style="color: #f8f8f2">t</span><span style="color: #f92672">.</span><span style="color: #f8f8f2">penup()</span>
+    <span style="color: #f8f8f2">t</span><span style="color: #f92672">.</span><span style="color: #f8f8f2">goto(p)</span>
+    <span style="color: #f8f8f2">t</span><span style="color: #f92672">.</span><span style="color: #f8f8f2">pendown()</span>
+
+<span style="color: #66d9ef">def</span> <span style="color: #a6e22e">write</span><span style="color: #f8f8f2">(text):</span>
+    <span style="color: #f8f8f2">t</span><span style="color: #f92672">.</span><span style="color: #f8f8f2">color(</span><span style="color: #e6db74">&quot;deepskyblue&quot;</span><span style="color: #f8f8f2">)</span>
+    <span style="color: #f8f8f2">t</span><span style="color: #f92672">.</span><span style="color: #f8f8f2">penup()</span>
+    <span style="color: #f8f8f2">t</span><span style="color: #f92672">.</span><span style="color: #f8f8f2">goto(</span><span style="color: #ae81ff">0</span><span style="color: #f8f8f2">,</span><span style="color: #ae81ff">180</span><span style="color: #f8f8f2">)</span>
+    <span style="color: #f8f8f2">t</span><span style="color: #f92672">.</span><span style="color: #f8f8f2">write(text,align</span><span style="color: #f92672">=</span><span style="color: #e6db74">&quot;center&quot;</span><span style="color: #f8f8f2">,font</span><span style="color: #f92672">=</span><span style="color: #f8f8f2">(</span><span style="color: #e6db74">&quot;Verdana&quot;</span><span style="color: #f8f8f2">,</span><span style="color: #ae81ff">20</span><span style="color: #f8f8f2">,</span><span style="color: #e6db74">&quot;normal&quot;</span><span style="color: #f8f8f2">))</span>
+
+<span style="color: #66d9ef">def</span> <span style="color: #a6e22e">draw</span><span style="color: #f8f8f2">(points,col):</span>
+    <span style="color: #f8f8f2">t</span><span style="color: #f92672">.</span><span style="color: #f8f8f2">color(col)</span>
+    <span style="color: #f8f8f2">goto(points[</span><span style="color: #ae81ff">0</span><span style="color: #f8f8f2">])</span>
+    <span style="color: #66d9ef">for</span> <span style="color: #f8f8f2">point</span> <span style="color: #f92672">in</span> <span style="color: #f8f8f2">points:</span>
+       <span style="color: #f8f8f2">t</span><span style="color: #f92672">.</span><span style="color: #f8f8f2">goto(point)</span>
+    <span style="color: #f8f8f2">t</span><span style="color: #f92672">.</span><span style="color: #f8f8f2">goto(points[</span><span style="color: #ae81ff">0</span><span style="color: #f8f8f2">])</span>   
+
+<span style="color: #f8f8f2">polygon</span> <span style="color: #f92672">=</span> <span style="color: #f8f8f2">[</span> <span style="color: #f8f8f2">(</span><span style="color: #f92672">-</span><span style="color: #ae81ff">150</span><span style="color: #f8f8f2">,</span><span style="color: #ae81ff">0</span><span style="color: #f8f8f2">),</span> <span style="color: #f8f8f2">(</span><span style="color: #ae81ff">0</span><span style="color: #f8f8f2">,</span><span style="color: #f92672">-</span><span style="color: #ae81ff">120</span><span style="color: #f8f8f2">),</span> <span style="color: #f8f8f2">(</span><span style="color: #ae81ff">150</span><span style="color: #f8f8f2">,</span><span style="color: #ae81ff">0</span><span style="color: #f8f8f2">),</span>
+            <span style="color: #f8f8f2">(</span><span style="color: #ae81ff">50</span><span style="color: #f8f8f2">,</span><span style="color: #ae81ff">150</span><span style="color: #f8f8f2">),</span> <span style="color: #f8f8f2">(</span><span style="color: #ae81ff">0</span><span style="color: #f8f8f2">,</span><span style="color: #ae81ff">50</span><span style="color: #f8f8f2">),</span> <span style="color: #f8f8f2">(</span><span style="color: #f92672">-</span><span style="color: #ae81ff">50</span><span style="color: #f8f8f2">,</span><span style="color: #ae81ff">150</span><span style="color: #f8f8f2">)]</span>
+<span style="color: #f8f8f2">clipWindow</span> <span style="color: #f92672">=</span> <span style="color: #f8f8f2">[</span> <span style="color: #f8f8f2">(</span><span style="color: #f92672">-</span><span style="color: #ae81ff">100</span><span style="color: #f8f8f2">,</span><span style="color: #f92672">-</span><span style="color: #ae81ff">100</span><span style="color: #f8f8f2">),</span> <span style="color: #f8f8f2">(</span><span style="color: #ae81ff">100</span><span style="color: #f8f8f2">,</span><span style="color: #f92672">-</span><span style="color: #ae81ff">100</span><span style="color: #f8f8f2">),</span> <span style="color: #f8f8f2">(</span><span style="color: #ae81ff">100</span><span style="color: #f8f8f2">,</span><span style="color: #ae81ff">100</span><span style="color: #f8f8f2">),</span> <span style="color: #f8f8f2">(</span><span style="color: #f92672">-</span><span style="color: #ae81ff">100</span><span style="color: #f8f8f2">,</span><span style="color: #ae81ff">100</span><span style="color: #f8f8f2">)</span> <span style="color: #f8f8f2">]</span>
+
+<span style="color: #f8f8f2">write(</span><span style="color: #e6db74">&quot;Before Clipping&quot;</span><span style="color: #f8f8f2">)</span>
+<span style="color: #f8f8f2">t</span><span style="color: #f92672">.</span><span style="color: #f8f8f2">begin_fill()</span>
+<span style="color: #f8f8f2">draw(polygon,</span><span style="color: #e6db74">&quot;red&quot;</span><span style="color: #f8f8f2">)</span>
+<span style="color: #f8f8f2">t</span><span style="color: #f92672">.</span><span style="color: #f8f8f2">end_fill()</span>
+<span style="color: #f8f8f2">draw(clipWindow,</span><span style="color: #e6db74">&quot;white&quot;</span><span style="color: #f8f8f2">)</span>
+
+<span style="color: #f8f8f2">clippedPoints</span> <span style="color: #f92672">=</span> <span style="color: #f8f8f2">clip(polygon,clipWindow)</span>
+<span style="color: #f8f8f2">clippedResult</span> <span style="color: #f92672">=</span> <span style="color: #f8f8f2">[tuple(p)</span> <span style="color: #66d9ef">for</span> <span style="color: #f8f8f2">p</span> <span style="color: #f92672">in</span> <span style="color: #f8f8f2">clippedPoints]</span>
+<span style="color: #f8f8f2">sleep(</span><span style="color: #ae81ff">4</span><span style="color: #f8f8f2">)</span>
+<span style="color: #f8f8f2">t</span><span style="color: #f92672">.</span><span style="color: #f8f8f2">clear()</span>
+
+<span style="color: #f8f8f2">write(</span><span style="color: #e6db74">&quot;After Clipping&quot;</span><span style="color: #f8f8f2">)</span>
+<span style="color: #f8f8f2">t</span><span style="color: #f92672">.</span><span style="color: #f8f8f2">begin_fill()</span>
+<span style="color: #f8f8f2">draw(clippedResult,</span><span style="color: #e6db74">&quot;red&quot;</span><span style="color: #f8f8f2">)</span>
+<span style="color: #f8f8f2">t</span><span style="color: #f92672">.</span><span style="color: #f8f8f2">end_fill()</span>
+<span style="color: #f8f8f2">draw(clipWindow,</span><span style="color: #e6db74">&quot;white&quot;</span><span style="color: #f8f8f2">)</span>
+
+<span style="color: #f8f8f2">t</span><span style="color: #f92672">.</span><span style="color: #f8f8f2">ht()</span>
+</pre>
+    </div>
+
+    <h1>13. 3D Object <code><a href="https://repl.it/@dileepdodla/3DObject" target="_blank">▶</a></code></h1>
+    <div class="center">
+<pre style="margin: 0; line-height: 125%"><span style="color: #f92672">import</span> <span style="color: #f8f8f2">turtle</span>
+<span style="color: #f8f8f2">turtle</span><span style="color: #f92672">.</span><span style="color: #f8f8f2">title(</span><span style="color: #e6db74">&quot;3D Object&quot;</span><span style="color: #f8f8f2">)</span>
+
+<span style="color: #f8f8f2">screen</span> <span style="color: #f92672">=</span> <span style="color: #f8f8f2">turtle</span><span style="color: #f92672">.</span><span style="color: #f8f8f2">Screen()</span>
+<span style="color: #f8f8f2">screen</span><span style="color: #f92672">.</span><span style="color: #f8f8f2">bgcolor(</span><span style="color: #e6db74">&quot;black&quot;</span><span style="color: #f8f8f2">)</span>
+
+<span style="color: #f8f8f2">t</span> <span style="color: #f92672">=</span> <span style="color: #f8f8f2">turtle</span><span style="color: #f92672">.</span><span style="color: #f8f8f2">Turtle()</span>
+<span style="color: #f8f8f2">t</span><span style="color: #f92672">.</span><span style="color: #f8f8f2">speed(</span><span style="color: #e6db74">&quot;fastest&quot;</span><span style="color: #f8f8f2">)</span>
+
+<span style="color: #f8f8f2">top</span> <span style="color: #f92672">=</span> <span style="color: #f8f8f2">(</span><span style="color: #ae81ff">20</span><span style="color: #f8f8f2">,</span><span style="color: #ae81ff">180</span><span style="color: #f8f8f2">)</span>
+
+<span style="color: #75715e"># Right side</span>
+<span style="color: #f8f8f2">t</span><span style="color: #f92672">.</span><span style="color: #f8f8f2">color(</span><span style="color: #e6db74">&quot;darkgoldenrod&quot;</span><span style="color: #f8f8f2">)</span>
+<span style="color: #f8f8f2">t</span><span style="color: #f92672">.</span><span style="color: #f8f8f2">begin_fill()</span>
+<span style="color: #f8f8f2">t</span><span style="color: #f92672">.</span><span style="color: #f8f8f2">left(</span><span style="color: #ae81ff">10</span><span style="color: #f8f8f2">)</span>
+<span style="color: #f8f8f2">t</span><span style="color: #f92672">.</span><span style="color: #f8f8f2">forward(</span><span style="color: #ae81ff">100</span><span style="color: #f8f8f2">)</span>
+<span style="color: #f8f8f2">t</span><span style="color: #f92672">.</span><span style="color: #f8f8f2">goto(top)</span>
+<span style="color: #f8f8f2">t</span><span style="color: #f92672">.</span><span style="color: #f8f8f2">home()</span>
+<span style="color: #f8f8f2">t</span><span style="color: #f92672">.</span><span style="color: #f8f8f2">end_fill()</span>
+
+<span style="color: #75715e"># Left side</span>
+<span style="color: #f8f8f2">t</span><span style="color: #f92672">.</span><span style="color: #f8f8f2">color(</span><span style="color: #e6db74">&quot;goldenrod&quot;</span><span style="color: #f8f8f2">)</span>
+<span style="color: #f8f8f2">t</span><span style="color: #f92672">.</span><span style="color: #f8f8f2">begin_fill()</span>
+<span style="color: #f8f8f2">t</span><span style="color: #f92672">.</span><span style="color: #f8f8f2">left(</span><span style="color: #ae81ff">160</span><span style="color: #f8f8f2">)</span>
+<span style="color: #f8f8f2">t</span><span style="color: #f92672">.</span><span style="color: #f8f8f2">forward(</span><span style="color: #ae81ff">60</span><span style="color: #f8f8f2">)</span>
+<span style="color: #f8f8f2">t</span><span style="color: #f92672">.</span><span style="color: #f8f8f2">goto(top)</span>
+<span style="color: #f8f8f2">t</span><span style="color: #f92672">.</span><span style="color: #f8f8f2">home()</span>
+<span style="color: #f8f8f2">t</span><span style="color: #f92672">.</span><span style="color: #f8f8f2">end_fill()</span>
+
+<span style="color: #f8f8f2">t</span><span style="color: #f92672">.</span><span style="color: #f8f8f2">ht()</span>
+</pre>
+    </div>
+
+    <h1>14. 3D Object Filling <code><a href="https://repl.it/@dileepdodla/3DObjectFilling" target="_blank">▶</a></code></h1>
+    <div class="center">
+<pre style="margin: 0; line-height: 125%"><span style="color: #f92672">import</span> <span style="color: #f8f8f2">turtle</span>
+<span style="color: #f8f8f2">turtle</span><span style="color: #f92672">.</span><span style="color: #f8f8f2">title(</span><span style="color: #e6db74">&quot;3D Object Filling&quot;</span><span style="color: #f8f8f2">)</span>
+
+<span style="color: #f8f8f2">screen</span> <span style="color: #f92672">=</span> <span style="color: #f8f8f2">turtle</span><span style="color: #f92672">.</span><span style="color: #f8f8f2">Screen()</span>
+<span style="color: #f8f8f2">screen</span><span style="color: #f92672">.</span><span style="color: #f8f8f2">bgcolor(</span><span style="color: #e6db74">&quot;black&quot;</span><span style="color: #f8f8f2">)</span>
+
+<span style="color: #f8f8f2">t</span> <span style="color: #f92672">=</span> <span style="color: #f8f8f2">turtle</span><span style="color: #f92672">.</span><span style="color: #f8f8f2">Turtle()</span> 
+<span style="color: #f8f8f2">t</span><span style="color: #f92672">.</span><span style="color: #f8f8f2">speed(</span><span style="color: #e6db74">&quot;fastest&quot;</span><span style="color: #f8f8f2">)</span>
+
+<span style="color: #f8f8f2">d</span> <span style="color: #f92672">=</span> <span style="color: #ae81ff">100</span>
+<span style="color: #66d9ef">def</span> <span style="color: #a6e22e">move</span><span style="color: #f8f8f2">():</span> 
+   <span style="color: #f8f8f2">t</span><span style="color: #f92672">.</span><span style="color: #f8f8f2">forward(d)</span> 
+
+<span style="color: #75715e"># Right side </span>
+<span style="color: #f8f8f2">t</span><span style="color: #f92672">.</span><span style="color: #f8f8f2">color(</span><span style="color: #e6db74">&quot;grey&quot;</span><span style="color: #f8f8f2">)</span> 
+<span style="color: #f8f8f2">t</span><span style="color: #f92672">.</span><span style="color: #f8f8f2">begin_fill()</span> 
+<span style="color: #f8f8f2">t</span><span style="color: #f92672">.</span><span style="color: #f8f8f2">left(</span><span style="color: #ae81ff">45</span><span style="color: #f8f8f2">)</span> 
+<span style="color: #f8f8f2">move()</span> 
+<span style="color: #f8f8f2">t</span><span style="color: #f92672">.</span><span style="color: #f8f8f2">right(</span><span style="color: #ae81ff">135</span><span style="color: #f8f8f2">)</span> 
+<span style="color: #f8f8f2">move()</span> 
+<span style="color: #f8f8f2">t</span><span style="color: #f92672">.</span><span style="color: #f8f8f2">right(</span><span style="color: #ae81ff">45</span><span style="color: #f8f8f2">)</span> 
+<span style="color: #f8f8f2">move()</span> 
+<span style="color: #f8f8f2">t</span><span style="color: #f92672">.</span><span style="color: #f8f8f2">right(</span><span style="color: #ae81ff">135</span><span style="color: #f8f8f2">)</span> 
+<span style="color: #f8f8f2">move()</span> 
+<span style="color: #f8f8f2">t</span><span style="color: #f92672">.</span><span style="color: #f8f8f2">end_fill()</span> 
+
+<span style="color: #75715e"># Left side </span>
+<span style="color: #f8f8f2">t</span><span style="color: #f92672">.</span><span style="color: #f8f8f2">color(</span><span style="color: #e6db74">&quot;darkgrey&quot;</span><span style="color: #f8f8f2">)</span> 
+<span style="color: #f8f8f2">t</span><span style="color: #f92672">.</span><span style="color: #f8f8f2">begin_fill()</span> 
+<span style="color: #f8f8f2">t</span><span style="color: #f92672">.</span><span style="color: #f8f8f2">left(</span><span style="color: #ae81ff">45</span><span style="color: #f8f8f2">)</span> 
+<span style="color: #f8f8f2">move()</span> 
+<span style="color: #f8f8f2">t</span><span style="color: #f92672">.</span><span style="color: #f8f8f2">left(</span><span style="color: #ae81ff">135</span><span style="color: #f8f8f2">)</span> 
+<span style="color: #f8f8f2">move()</span> 
+<span style="color: #f8f8f2">t</span><span style="color: #f92672">.</span><span style="color: #f8f8f2">left(</span><span style="color: #ae81ff">45</span><span style="color: #f8f8f2">)</span> 
+<span style="color: #f8f8f2">move()</span> 
+<span style="color: #f8f8f2">t</span><span style="color: #f92672">.</span><span style="color: #f8f8f2">left(</span><span style="color: #ae81ff">135</span><span style="color: #f8f8f2">)</span> 
+<span style="color: #f8f8f2">move()</span> 
+<span style="color: #f8f8f2">t</span><span style="color: #f92672">.</span><span style="color: #f8f8f2">end_fill()</span> 
+
+<span style="color: #75715e"># Top side </span>
+<span style="color: #f8f8f2">t</span><span style="color: #f92672">.</span><span style="color: #f8f8f2">color(</span><span style="color: #e6db74">&quot;lightgrey&quot;</span><span style="color: #f8f8f2">)</span> 
+<span style="color: #f8f8f2">t</span><span style="color: #f92672">.</span><span style="color: #f8f8f2">begin_fill()</span> 
+<span style="color: #f8f8f2">t</span><span style="color: #f92672">.</span><span style="color: #f8f8f2">left(</span><span style="color: #ae81ff">45</span><span style="color: #f8f8f2">)</span> 
+<span style="color: #f8f8f2">move()</span> 
+<span style="color: #f8f8f2">t</span><span style="color: #f92672">.</span><span style="color: #f8f8f2">right(</span><span style="color: #ae81ff">90</span><span style="color: #f8f8f2">)</span> 
+<span style="color: #f8f8f2">move()</span> 
+<span style="color: #f8f8f2">t</span><span style="color: #f92672">.</span><span style="color: #f8f8f2">right(</span><span style="color: #ae81ff">90</span><span style="color: #f8f8f2">)</span> 
+<span style="color: #f8f8f2">move()</span> 
+<span style="color: #f8f8f2">t</span><span style="color: #f92672">.</span><span style="color: #f8f8f2">right(</span><span style="color: #ae81ff">90</span><span style="color: #f8f8f2">)</span> 
+<span style="color: #f8f8f2">move()</span> 
+<span style="color: #f8f8f2">t</span><span style="color: #f92672">.</span><span style="color: #f8f8f2">right(</span><span style="color: #ae81ff">135</span><span style="color: #f8f8f2">)</span> 
+<span style="color: #f8f8f2">move()</span> 
+<span style="color: #f8f8f2">t</span><span style="color: #f92672">.</span><span style="color: #f8f8f2">end_fill()</span>
+</pre>
+    </div>
+
+    <h1>15. 3D Object Transformations <code><a href="https://repl.it/@dileepdodla/3DObjectTransformations" target="_blank">▶</a></code></h1>
+    <div class="center">
+<pre style="margin: 0; line-height: 125%"><span style="color: #f92672">from</span> <span style="color: #f8f8f2">time</span> <span style="color: #f92672">import</span> <span style="color: #f8f8f2">sleep</span>
+<span style="color: #f92672">import</span> <span style="color: #f8f8f2">turtle</span>
+<span style="color: #f8f8f2">turtle</span><span style="color: #f92672">.</span><span style="color: #f8f8f2">title(</span><span style="color: #e6db74">&quot;3D Transformations&quot;</span><span style="color: #f8f8f2">)</span>
+
+<span style="color: #f8f8f2">screen</span> <span style="color: #f92672">=</span> <span style="color: #f8f8f2">turtle</span><span style="color: #f92672">.</span><span style="color: #f8f8f2">Screen()</span>
+<span style="color: #f8f8f2">screen</span><span style="color: #f92672">.</span><span style="color: #f8f8f2">bgcolor(</span><span style="color: #e6db74">&quot;black&quot;</span><span style="color: #f8f8f2">)</span>
+
+<span style="color: #f8f8f2">t</span> <span style="color: #f92672">=</span> <span style="color: #f8f8f2">turtle</span><span style="color: #f92672">.</span><span style="color: #f8f8f2">Turtle()</span>
+<span style="color: #f8f8f2">t</span><span style="color: #f92672">.</span><span style="color: #f8f8f2">color(</span><span style="color: #e6db74">&quot;white&quot;</span><span style="color: #f8f8f2">,</span><span style="color: #e6db74">&quot;green&quot;</span><span style="color: #f8f8f2">)</span>
+<span style="color: #f8f8f2">t</span><span style="color: #f92672">.</span><span style="color: #f8f8f2">width(</span><span style="color: #ae81ff">3</span><span style="color: #f8f8f2">)</span>
+<span style="color: #f8f8f2">t</span><span style="color: #f92672">.</span><span style="color: #f8f8f2">speed(</span><span style="color: #e6db74">&quot;fastest&quot;</span><span style="color: #f8f8f2">)</span>
+<span style="color: #f8f8f2">t</span><span style="color: #f92672">.</span><span style="color: #f8f8f2">ht()</span>
+
+<span style="color: #66d9ef">def</span> <span style="color: #a6e22e">cone</span><span style="color: #f8f8f2">(r):</span>
+    <span style="color: #f8f8f2">t</span><span style="color: #f92672">.</span><span style="color: #f8f8f2">pendown()</span>
+
+    <span style="color: #f8f8f2">t</span><span style="color: #f92672">.</span><span style="color: #f8f8f2">begin_fill()</span>
+    <span style="color: #f8f8f2">t</span><span style="color: #f92672">.</span><span style="color: #f8f8f2">left(</span><span style="color: #ae81ff">45</span><span style="color: #f8f8f2">)</span>
+    <span style="color: #f8f8f2">t</span><span style="color: #f92672">.</span><span style="color: #f8f8f2">circle(</span><span style="color: #f92672">-</span><span style="color: #f8f8f2">r,</span><span style="color: #ae81ff">90</span><span style="color: #f8f8f2">)</span>
+    <span style="color: #f8f8f2">t</span><span style="color: #f92672">.</span><span style="color: #f8f8f2">right(</span><span style="color: #ae81ff">90</span><span style="color: #f8f8f2">)</span>
+    <span style="color: #f8f8f2">t</span><span style="color: #f92672">.</span><span style="color: #f8f8f2">circle(</span><span style="color: #f92672">-</span><span style="color: #f8f8f2">r,</span><span style="color: #ae81ff">90</span><span style="color: #f8f8f2">)</span>
+    <span style="color: #f8f8f2">t</span><span style="color: #f92672">.</span><span style="color: #f8f8f2">end_fill()</span>
+    
+    <span style="color: #f8f8f2">t</span><span style="color: #f92672">.</span><span style="color: #f8f8f2">right(</span><span style="color: #ae81ff">67.5</span><span style="color: #f8f8f2">)</span>
+    <span style="color: #f8f8f2">t</span><span style="color: #f92672">.</span><span style="color: #f8f8f2">forward(</span><span style="color: #ae81ff">3</span><span style="color: #f92672">**</span><span style="color: #ae81ff">0.5</span><span style="color: #f92672">*</span><span style="color: #f8f8f2">r)</span>
+    <span style="color: #f8f8f2">t</span><span style="color: #f92672">.</span><span style="color: #f8f8f2">right(</span><span style="color: #ae81ff">132.5</span><span style="color: #f8f8f2">)</span>
+    <span style="color: #f8f8f2">t</span><span style="color: #f92672">.</span><span style="color: #f8f8f2">forward(</span><span style="color: #ae81ff">3</span><span style="color: #f92672">**</span><span style="color: #ae81ff">0.5</span><span style="color: #f92672">*</span><span style="color: #f8f8f2">r)</span>
+
+    <span style="color: #f8f8f2">t</span><span style="color: #f92672">.</span><span style="color: #f8f8f2">penup()</span>
+
+<span style="color: #66d9ef">def</span> <span style="color: #a6e22e">translate</span><span style="color: #f8f8f2">(x,y):</span>
+    <span style="color: #f8f8f2">t</span><span style="color: #f92672">.</span><span style="color: #f8f8f2">penup()</span>
+    <span style="color: #f8f8f2">t</span><span style="color: #f92672">.</span><span style="color: #f8f8f2">goto(x,y)</span>
+    <span style="color: #f8f8f2">t</span><span style="color: #f92672">.</span><span style="color: #f8f8f2">pendown()</span>
+
+<span style="color: #66d9ef">def</span> <span style="color: #a6e22e">scale</span><span style="color: #f8f8f2">(val):</span>
+    <span style="color: #f8f8f2">cone(r</span><span style="color: #f92672">*</span><span style="color: #f8f8f2">val)</span>
+
+<span style="color: #66d9ef">def</span> <span style="color: #a6e22e">rotate</span><span style="color: #f8f8f2">(deg):</span>
+    <span style="color: #f8f8f2">t</span><span style="color: #f92672">.</span><span style="color: #f8f8f2">left(deg)</span>
+    <span style="color: #f8f8f2">cone(r)</span>
+    
+<span style="color: #66d9ef">def</span> <span style="color: #a6e22e">write</span><span style="color: #f8f8f2">(x,y,text):</span>
+    <span style="color: #f8f8f2">pen</span><span style="color: #f92672">.</span><span style="color: #f8f8f2">penup()</span>
+    <span style="color: #f8f8f2">pen</span><span style="color: #f92672">.</span><span style="color: #f8f8f2">goto(x,y)</span>
+    <span style="color: #f8f8f2">pen</span><span style="color: #f92672">.</span><span style="color: #f8f8f2">pendown()</span>
+    <span style="color: #f8f8f2">pen</span><span style="color: #f92672">.</span><span style="color: #f8f8f2">write(</span><span style="color: #e6db74">&quot;-&gt; &quot;</span><span style="color: #f92672">+</span><span style="color: #f8f8f2">text,font</span><span style="color: #f92672">=</span><span style="color: #f8f8f2">(</span><span style="color: #e6db74">&quot;Verdana&quot;</span><span style="color: #f8f8f2">,</span> <span style="color: #ae81ff">20</span><span style="color: #f8f8f2">,</span> <span style="color: #e6db74">&quot;normal&quot;</span><span style="color: #f8f8f2">))</span>
+
+<span style="color: #f8f8f2">pen</span> <span style="color: #f92672">=</span> <span style="color: #f8f8f2">t</span><span style="color: #f92672">.</span><span style="color: #f8f8f2">clone()</span>
+<span style="color: #f8f8f2">pen</span><span style="color: #f92672">.</span><span style="color: #f8f8f2">color(</span><span style="color: #e6db74">&quot;red&quot;</span><span style="color: #f8f8f2">)</span>
+
+<span style="color: #f8f8f2">r</span> <span style="color: #f92672">=</span> <span style="color: #ae81ff">60</span>
+<span style="color: #f8f8f2">pen</span><span style="color: #f92672">.</span><span style="color: #f8f8f2">penup()</span>
+<span style="color: #f8f8f2">pen</span><span style="color: #f92672">.</span><span style="color: #f8f8f2">goto(</span><span style="color: #ae81ff">0</span><span style="color: #f8f8f2">,</span><span style="color: #ae81ff">250</span><span style="color: #f8f8f2">)</span>
+<span style="color: #f8f8f2">pen</span><span style="color: #f92672">.</span><span style="color: #f8f8f2">pendown()</span>
+<span style="color: #f8f8f2">pen</span><span style="color: #f92672">.</span><span style="color: #f8f8f2">write(</span><span style="color: #e6db74">&quot;Transformation on Cone&quot;</span><span style="color: #f8f8f2">,align</span><span style="color: #f92672">=</span><span style="color: #e6db74">&quot;center&quot;</span><span style="color: #f8f8f2">,font</span><span style="color: #f92672">=</span><span style="color: #f8f8f2">(</span><span style="color: #e6db74">&quot;Verdana&quot;</span><span style="color: #f8f8f2">,</span> <span style="color: #ae81ff">20</span><span style="color: #f8f8f2">,</span> <span style="color: #e6db74">&quot;underline&quot;</span><span style="color: #f8f8f2">))</span>
+<span style="color: #f8f8f2">t</span><span style="color: #f92672">.</span><span style="color: #f8f8f2">penup()</span>
+<span style="color: #f8f8f2">t</span><span style="color: #f92672">.</span><span style="color: #f8f8f2">goto(</span><span style="color: #f92672">-</span><span style="color: #f8f8f2">r</span><span style="color: #f92672">*</span><span style="color: #ae81ff">0.66</span><span style="color: #f8f8f2">,</span><span style="color: #ae81ff">0</span><span style="color: #f8f8f2">)</span>
+<span style="color: #f8f8f2">t</span><span style="color: #f92672">.</span><span style="color: #f8f8f2">pendown()</span>
+<span style="color: #f8f8f2">cone(r)</span>
+
+<span style="color: #f8f8f2">pen</span><span style="color: #f92672">.</span><span style="color: #f8f8f2">penup()</span>
+<span style="color: #f8f8f2">pen</span><span style="color: #f92672">.</span><span style="color: #f8f8f2">home()</span>
+<span style="color: #f8f8f2">pen</span><span style="color: #f92672">.</span><span style="color: #f8f8f2">pendown()</span>
+<span style="color: #f8f8f2">pen</span><span style="color: #f92672">.</span><span style="color: #f8f8f2">width(</span><span style="color: #ae81ff">1</span><span style="color: #f8f8f2">)</span>
+<span style="color: #f8f8f2">pen</span><span style="color: #f92672">.</span><span style="color: #f8f8f2">goto(</span><span style="color: #f92672">-</span><span style="color: #ae81ff">220</span><span style="color: #f8f8f2">,</span><span style="color: #ae81ff">0</span><span style="color: #f8f8f2">)</span>
+<span style="color: #f8f8f2">pen</span><span style="color: #f92672">.</span><span style="color: #f8f8f2">home()</span>
+<span style="color: #f8f8f2">pen</span><span style="color: #f92672">.</span><span style="color: #f8f8f2">goto(</span><span style="color: #ae81ff">0</span><span style="color: #f8f8f2">,</span><span style="color: #ae81ff">220</span><span style="color: #f8f8f2">)</span>
+<span style="color: #f8f8f2">pen</span><span style="color: #f92672">.</span><span style="color: #f8f8f2">home()</span>
+<span style="color: #f8f8f2">pen</span><span style="color: #f92672">.</span><span style="color: #f8f8f2">goto(</span><span style="color: #ae81ff">100</span><span style="color: #f8f8f2">,</span><span style="color: #f92672">-</span><span style="color: #ae81ff">100</span><span style="color: #f8f8f2">)</span>
+<span style="color: #f8f8f2">pen</span><span style="color: #f92672">.</span><span style="color: #f8f8f2">home()</span>
+
+<span style="color: #f8f8f2">sleep(</span><span style="color: #ae81ff">2</span><span style="color: #f8f8f2">)</span>
+<span style="color: #f8f8f2">t</span><span style="color: #f92672">.</span><span style="color: #f8f8f2">home()</span>
+<span style="color: #f8f8f2">write(</span><span style="color: #f92672">-</span><span style="color: #ae81ff">300</span><span style="color: #f8f8f2">,</span><span style="color: #ae81ff">200</span><span style="color: #f8f8f2">,</span><span style="color: #e6db74">&quot;Translation&quot;</span><span style="color: #f8f8f2">)</span>
+<span style="color: #f8f8f2">translate(</span><span style="color: #f92672">-</span><span style="color: #ae81ff">210</span><span style="color: #f8f8f2">,</span><span style="color: #ae81ff">70</span><span style="color: #f8f8f2">)</span>
+<span style="color: #f8f8f2">cone(r)</span>
+
+<span style="color: #f8f8f2">sleep(</span><span style="color: #ae81ff">2</span><span style="color: #f8f8f2">)</span>
+<span style="color: #f8f8f2">t</span><span style="color: #f92672">.</span><span style="color: #f8f8f2">home()</span>
+<span style="color: #f8f8f2">write(</span><span style="color: #ae81ff">50</span><span style="color: #f8f8f2">,</span><span style="color: #ae81ff">200</span><span style="color: #f8f8f2">,</span><span style="color: #e6db74">&quot;Scaling&quot;</span><span style="color: #f8f8f2">)</span>
+<span style="color: #f8f8f2">translate(</span><span style="color: #ae81ff">100</span><span style="color: #f8f8f2">,</span><span style="color: #ae81ff">45</span><span style="color: #f8f8f2">)</span>
+<span style="color: #f8f8f2">scale(</span><span style="color: #ae81ff">1.5</span><span style="color: #f8f8f2">)</span>
+
+<span style="color: #f8f8f2">sleep(</span><span style="color: #ae81ff">2</span><span style="color: #f8f8f2">)</span>
+<span style="color: #f8f8f2">t</span><span style="color: #f92672">.</span><span style="color: #f8f8f2">home()</span>
+<span style="color: #f8f8f2">write(</span><span style="color: #ae81ff">50</span><span style="color: #f8f8f2">,</span><span style="color: #f92672">-</span><span style="color: #ae81ff">220</span><span style="color: #f8f8f2">,</span><span style="color: #e6db74">&quot;Rotation&quot;</span><span style="color: #f8f8f2">)</span>
+<span style="color: #f8f8f2">translate(</span><span style="color: #ae81ff">150</span><span style="color: #f8f8f2">,</span><span style="color: #f92672">-</span><span style="color: #ae81ff">150</span><span style="color: #f8f8f2">)</span>
+<span style="color: #f8f8f2">rotate(</span><span style="color: #ae81ff">45</span><span style="color: #f8f8f2">)</span>
+
+<span style="color: #f8f8f2">sleep(</span><span style="color: #ae81ff">2</span><span style="color: #f8f8f2">)</span>
+<span style="color: #f8f8f2">t</span><span style="color: #f92672">.</span><span style="color: #f8f8f2">home()</span>
+<span style="color: #f8f8f2">write(</span><span style="color: #f92672">-</span><span style="color: #ae81ff">300</span><span style="color: #f8f8f2">,</span><span style="color: #f92672">-</span><span style="color: #ae81ff">220</span><span style="color: #f8f8f2">,</span><span style="color: #e6db74">&quot;Reflection&quot;</span><span style="color: #f8f8f2">)</span>
+<span style="color: #f8f8f2">translate(</span><span style="color: #f92672">-</span><span style="color: #ae81ff">125</span><span style="color: #f8f8f2">,</span><span style="color: #f92672">-</span><span style="color: #ae81ff">70</span><span style="color: #f8f8f2">)</span>
+<span style="color: #f8f8f2">rotate(</span><span style="color: #ae81ff">180</span><span style="color: #f8f8f2">)</span>
+</pre>
+    </div>
+
+    <h1>16. Cubic Bezier Curve <code><a href="https://repl.it/@dileepdodla/CubicBezierCurve" target="_blank">▶</a></code></h1>
+    <div class="center">
+<pre style="margin: 0; line-height: 125%"><span style="color: #f92672">import</span> <span style="color: #f8f8f2">turtle</span>
+<span style="color: #f8f8f2">turtle</span><span style="color: #f92672">.</span><span style="color: #f8f8f2">title(</span><span style="color: #e6db74">&quot;Cubic Bezier Curve&quot;</span><span style="color: #f8f8f2">)</span>
+
+<span style="color: #f8f8f2">screen</span> <span style="color: #f92672">=</span> <span style="color: #f8f8f2">turtle</span><span style="color: #f92672">.</span><span style="color: #f8f8f2">Screen()</span>
+<span style="color: #f8f8f2">screen</span><span style="color: #f92672">.</span><span style="color: #f8f8f2">bgcolor(</span><span style="color: #e6db74">&quot;black&quot;</span><span style="color: #f8f8f2">)</span>
+
+<span style="color: #f8f8f2">b</span> <span style="color: #f92672">=</span> <span style="color: #f8f8f2">turtle</span><span style="color: #f92672">.</span><span style="color: #f8f8f2">Turtle()</span>
+<span style="color: #f8f8f2">b</span><span style="color: #f92672">.</span><span style="color: #f8f8f2">color(</span><span style="color: #e6db74">&quot;red&quot;</span><span style="color: #f8f8f2">)</span>
+<span style="color: #f8f8f2">b</span><span style="color: #f92672">.</span><span style="color: #f8f8f2">penup()</span>
+<span style="color: #f8f8f2">b</span><span style="color: #f92672">.</span><span style="color: #f8f8f2">ht()</span>
+
+<span style="color: #66d9ef">def</span> <span style="color: #a6e22e">bx</span><span style="color: #f8f8f2">(t):</span>
+    <span style="color: #f8f8f2">bxcor</span> <span style="color: #f92672">=</span> <span style="color: #f8f8f2">(</span> <span style="color: #f8f8f2">c1x</span> <span style="color: #f92672">*</span> <span style="color: #f8f8f2">(</span><span style="color: #ae81ff">1</span><span style="color: #f92672">-</span><span style="color: #f8f8f2">t)</span><span style="color: #f92672">**</span><span style="color: #ae81ff">3</span> <span style="color: #f92672">+</span> <span style="color: #ae81ff">3</span> <span style="color: #f92672">*</span> <span style="color: #f8f8f2">c2x</span> <span style="color: #f92672">*</span> <span style="color: #f8f8f2">t</span> <span style="color: #f92672">*</span> <span style="color: #f8f8f2">(</span><span style="color: #ae81ff">1</span><span style="color: #f92672">-</span><span style="color: #f8f8f2">t)</span><span style="color: #f92672">**</span><span style="color: #ae81ff">2</span>
+             <span style="color: #f92672">+</span> <span style="color: #ae81ff">3</span> <span style="color: #f92672">*</span> <span style="color: #f8f8f2">c3x</span> <span style="color: #f92672">*</span> <span style="color: #f8f8f2">t</span><span style="color: #f92672">**</span><span style="color: #ae81ff">2</span> <span style="color: #f92672">*</span> <span style="color: #f8f8f2">(</span><span style="color: #ae81ff">1</span><span style="color: #f92672">-</span><span style="color: #f8f8f2">t)</span> <span style="color: #f92672">+</span> <span style="color: #f8f8f2">c4x</span> <span style="color: #f92672">*</span> <span style="color: #f8f8f2">t</span><span style="color: #f92672">**</span><span style="color: #ae81ff">3</span> <span style="color: #f8f8f2">)</span>
+    <span style="color: #66d9ef">return</span> <span style="color: #f8f8f2">bxcor</span>
+
+<span style="color: #66d9ef">def</span> <span style="color: #a6e22e">by</span><span style="color: #f8f8f2">(t):</span>
+    <span style="color: #f8f8f2">bycor</span> <span style="color: #f92672">=</span> <span style="color: #f8f8f2">(</span> <span style="color: #f8f8f2">c1y</span> <span style="color: #f92672">*</span> <span style="color: #f8f8f2">(</span><span style="color: #ae81ff">1</span><span style="color: #f92672">-</span><span style="color: #f8f8f2">t)</span><span style="color: #f92672">**</span><span style="color: #ae81ff">3</span> <span style="color: #f92672">+</span> <span style="color: #ae81ff">3</span> <span style="color: #f92672">*</span> <span style="color: #f8f8f2">c2y</span> <span style="color: #f92672">*</span> <span style="color: #f8f8f2">t</span> <span style="color: #f92672">*</span> <span style="color: #f8f8f2">(</span><span style="color: #ae81ff">1</span><span style="color: #f92672">-</span><span style="color: #f8f8f2">t)</span><span style="color: #f92672">**</span><span style="color: #ae81ff">2</span>
+             <span style="color: #f92672">+</span> <span style="color: #ae81ff">3</span> <span style="color: #f92672">*</span> <span style="color: #f8f8f2">c3y</span> <span style="color: #f92672">*</span> <span style="color: #f8f8f2">t</span><span style="color: #f92672">**</span><span style="color: #ae81ff">2</span> <span style="color: #f92672">*</span> <span style="color: #f8f8f2">(</span><span style="color: #ae81ff">1</span><span style="color: #f92672">-</span><span style="color: #f8f8f2">t)</span> <span style="color: #f92672">+</span> <span style="color: #f8f8f2">c4y</span> <span style="color: #f92672">*</span> <span style="color: #f8f8f2">t</span><span style="color: #f92672">**</span><span style="color: #ae81ff">3</span> <span style="color: #f8f8f2">)</span>
+    <span style="color: #66d9ef">return</span> <span style="color: #f8f8f2">bycor</span>
+
+<span style="color: #f8f8f2">controlPoints</span> <span style="color: #f92672">=</span> <span style="color: #f8f8f2">[</span> <span style="color: #f8f8f2">(</span><span style="color: #f92672">-</span><span style="color: #ae81ff">170</span><span style="color: #f8f8f2">,</span><span style="color: #f92672">-</span><span style="color: #ae81ff">150</span><span style="color: #f8f8f2">),</span> <span style="color: #f8f8f2">(</span><span style="color: #f92672">-</span><span style="color: #ae81ff">40</span><span style="color: #f8f8f2">,</span><span style="color: #ae81ff">130</span><span style="color: #f8f8f2">),</span> <span style="color: #f8f8f2">(</span><span style="color: #ae81ff">90</span><span style="color: #f8f8f2">,</span><span style="color: #f92672">-</span><span style="color: #ae81ff">150</span><span style="color: #f8f8f2">),</span> <span style="color: #f8f8f2">(</span><span style="color: #ae81ff">170</span><span style="color: #f8f8f2">,</span><span style="color: #ae81ff">140</span><span style="color: #f8f8f2">)</span> <span style="color: #f8f8f2">]</span>
+<span style="color: #66d9ef">for</span> <span style="color: #f8f8f2">point</span> <span style="color: #f92672">in</span> <span style="color: #f8f8f2">controlPoints:</span>
+    <span style="color: #f8f8f2">b</span><span style="color: #f92672">.</span><span style="color: #f8f8f2">goto(point)</span>
+    <span style="color: #f8f8f2">b</span><span style="color: #f92672">.</span><span style="color: #f8f8f2">dot()</span>
+
+<span style="color: #f8f8f2">c1x,</span> <span style="color: #f8f8f2">c1y</span> <span style="color: #f92672">=</span> <span style="color: #f8f8f2">controlPoints[</span><span style="color: #ae81ff">0</span><span style="color: #f8f8f2">]</span>
+<span style="color: #f8f8f2">c2x,</span> <span style="color: #f8f8f2">c2y</span> <span style="color: #f92672">=</span> <span style="color: #f8f8f2">controlPoints[</span><span style="color: #ae81ff">1</span><span style="color: #f8f8f2">]</span>
+<span style="color: #f8f8f2">c3x,</span> <span style="color: #f8f8f2">c3y</span> <span style="color: #f92672">=</span> <span style="color: #f8f8f2">controlPoints[</span><span style="color: #ae81ff">2</span><span style="color: #f8f8f2">]</span>
+<span style="color: #f8f8f2">c4x,</span> <span style="color: #f8f8f2">c4y</span> <span style="color: #f92672">=</span> <span style="color: #f8f8f2">controlPoints[</span><span style="color: #ae81ff">3</span><span style="color: #f8f8f2">]</span>
+
+<span style="color: #f8f8f2">b</span><span style="color: #f92672">.</span><span style="color: #f8f8f2">goto(c1x,c1y)</span>
+
+<span style="color: #f8f8f2">b</span><span style="color: #f92672">.</span><span style="color: #f8f8f2">pendown()</span>
+
+<span style="color: #66d9ef">for</span> <span style="color: #f8f8f2">i</span> <span style="color: #f92672">in</span> <span style="color: #f8f8f2">range(</span><span style="color: #ae81ff">1001</span><span style="color: #f8f8f2">):</span>
+    <span style="color: #f8f8f2">t</span> <span style="color: #f92672">=</span> <span style="color: #f8f8f2">i</span><span style="color: #f92672">/</span><span style="color: #ae81ff">1000.0</span>
+    <span style="color: #f8f8f2">b</span><span style="color: #f92672">.</span><span style="color: #f8f8f2">goto(bx(t),by(t))</span>
+</pre>
+    </div>
+
+    <h1>17. Cylinder <code><a href="https://repl.it/@dileepdodla/cylinder" target="_blank">▶</a></code></h1>
+    <div class="center">
+<pre style="margin: 0; line-height: 125%"><span style="color: #f92672">import</span> <span style="color: #f8f8f2">turtle</span>
+<span style="color: #f8f8f2">turtle</span><span style="color: #f92672">.</span><span style="color: #f8f8f2">title(</span><span style="color: #e6db74">&quot;Cylinder&quot;</span><span style="color: #f8f8f2">)</span>
+
+<span style="color: #f8f8f2">screen</span> <span style="color: #f92672">=</span> <span style="color: #f8f8f2">turtle</span><span style="color: #f92672">.</span><span style="color: #f8f8f2">Screen()</span>
+<span style="color: #f8f8f2">screen</span><span style="color: #f92672">.</span><span style="color: #f8f8f2">bgcolor(</span><span style="color: #e6db74">&quot;black&quot;</span><span style="color: #f8f8f2">)</span>
+
+<span style="color: #f8f8f2">t</span> <span style="color: #f92672">=</span> <span style="color: #f8f8f2">turtle</span><span style="color: #f92672">.</span><span style="color: #f8f8f2">Turtle()</span>
+<span style="color: #f8f8f2">t</span><span style="color: #f92672">.</span><span style="color: #f8f8f2">color(</span><span style="color: #e6db74">&quot;blue&quot;</span><span style="color: #f8f8f2">)</span>
+<span style="color: #f8f8f2">t</span><span style="color: #f92672">.</span><span style="color: #f8f8f2">fillcolor(</span><span style="color: #e6db74">&quot;#000111&quot;</span><span style="color: #f8f8f2">)</span>
+<span style="color: #f8f8f2">t</span><span style="color: #f92672">.</span><span style="color: #f8f8f2">width(</span><span style="color: #ae81ff">5</span><span style="color: #f8f8f2">)</span>
+<span style="color: #f8f8f2">t</span><span style="color: #f92672">.</span><span style="color: #f8f8f2">penup()</span>
+<span style="color: #f8f8f2">t</span><span style="color: #f92672">.</span><span style="color: #f8f8f2">ht()</span>
+
+<span style="color: #66d9ef">def</span> <span style="color: #a6e22e">drawEllipse</span><span style="color: #f8f8f2">():</span>
+    <span style="color: #f8f8f2">t</span><span style="color: #f92672">.</span><span style="color: #f8f8f2">right(</span><span style="color: #ae81ff">45</span><span style="color: #f8f8f2">)</span>
+    <span style="color: #f8f8f2">t</span><span style="color: #f92672">.</span><span style="color: #f8f8f2">circle(</span><span style="color: #f92672">-</span><span style="color: #ae81ff">150</span><span style="color: #f8f8f2">,</span><span style="color: #ae81ff">90</span><span style="color: #f8f8f2">)</span>
+    <span style="color: #f8f8f2">t</span><span style="color: #f92672">.</span><span style="color: #f8f8f2">right(</span><span style="color: #ae81ff">90</span><span style="color: #f8f8f2">)</span>
+    <span style="color: #f8f8f2">t</span><span style="color: #f92672">.</span><span style="color: #f8f8f2">circle(</span><span style="color: #f92672">-</span><span style="color: #ae81ff">150</span><span style="color: #f8f8f2">,</span><span style="color: #ae81ff">90</span><span style="color: #f8f8f2">)</span>
+
+<span style="color: #66d9ef">def</span> <span style="color: #a6e22e">move</span><span style="color: #f8f8f2">():</span>
+    <span style="color: #f8f8f2">t</span><span style="color: #f92672">.</span><span style="color: #f8f8f2">right(</span><span style="color: #ae81ff">90</span><span style="color: #f8f8f2">)</span>
+    <span style="color: #f8f8f2">t</span><span style="color: #f92672">.</span><span style="color: #f8f8f2">circle(</span><span style="color: #f92672">-</span><span style="color: #ae81ff">150</span><span style="color: #f8f8f2">,</span><span style="color: #ae81ff">90</span><span style="color: #f8f8f2">)</span>
+    <span style="color: #f8f8f2">t</span><span style="color: #f92672">.</span><span style="color: #f8f8f2">right(</span><span style="color: #ae81ff">45</span><span style="color: #f8f8f2">)</span>
+
+<span style="color: #66d9ef">def</span> <span style="color: #a6e22e">drawLine</span><span style="color: #f8f8f2">():</span>
+    <span style="color: #f8f8f2">t</span><span style="color: #f92672">.</span><span style="color: #f8f8f2">forward(</span><span style="color: #ae81ff">300</span><span style="color: #f8f8f2">)</span>
+    
+<span style="color: #66d9ef">def</span> <span style="color: #a6e22e">drawCylinder</span><span style="color: #f8f8f2">():</span>
+    <span style="color: #f8f8f2">t</span><span style="color: #f92672">.</span><span style="color: #f8f8f2">pendown()</span>
+    <span style="color: #f8f8f2">t</span><span style="color: #f92672">.</span><span style="color: #f8f8f2">begin_fill()</span>
+    <span style="color: #f8f8f2">drawLine()</span>
+    <span style="color: #f8f8f2">drawEllipse()</span>
+    <span style="color: #f8f8f2">move()</span>
+    <span style="color: #f8f8f2">drawLine()</span>
+    <span style="color: #f8f8f2">drawEllipse()</span>
+    <span style="color: #f8f8f2">t</span><span style="color: #f92672">.</span><span style="color: #f8f8f2">end_fill()</span>
+
+<span style="color: #f8f8f2">t</span><span style="color: #f92672">.</span><span style="color: #f8f8f2">forward(</span><span style="color: #ae81ff">100</span><span style="color: #f8f8f2">)</span>
+<span style="color: #f8f8f2">t</span><span style="color: #f92672">.</span><span style="color: #f8f8f2">left(</span><span style="color: #ae81ff">90</span><span style="color: #f8f8f2">)</span>
+<span style="color: #f8f8f2">t</span><span style="color: #f92672">.</span><span style="color: #f8f8f2">forward(</span><span style="color: #ae81ff">150</span><span style="color: #f8f8f2">)</span>
+<span style="color: #f8f8f2">t</span><span style="color: #f92672">.</span><span style="color: #f8f8f2">left(</span><span style="color: #ae81ff">180</span><span style="color: #f8f8f2">)</span>
+
+<span style="color: #f8f8f2">drawCylinder()</span>
+
+<span style="color: #f8f8f2">t</span><span style="color: #f92672">.</span><span style="color: #f8f8f2">color(</span><span style="color: #e6db74">&quot;grey&quot;</span><span style="color: #f8f8f2">)</span>
+<span style="color: #f8f8f2">t</span><span style="color: #f92672">.</span><span style="color: #f8f8f2">width(</span><span style="color: #ae81ff">1</span><span style="color: #f8f8f2">)</span>
+
+<span style="color: #f8f8f2">t</span><span style="color: #f92672">.</span><span style="color: #f8f8f2">penup()</span>
+<span style="color: #f8f8f2">t</span><span style="color: #f92672">.</span><span style="color: #f8f8f2">home()</span>
+<span style="color: #f8f8f2">t</span><span style="color: #f92672">.</span><span style="color: #f8f8f2">goto(</span><span style="color: #ae81ff">100</span><span style="color: #f8f8f2">,</span><span style="color: #ae81ff">150</span><span style="color: #f8f8f2">)</span>
+<span style="color: #f8f8f2">t</span><span style="color: #f92672">.</span><span style="color: #f8f8f2">left(</span><span style="color: #ae81ff">180</span><span style="color: #f8f8f2">)</span>
+<span style="color: #f8f8f2">t</span><span style="color: #f92672">.</span><span style="color: #f8f8f2">pendown()</span>
+<span style="color: #f8f8f2">t</span><span style="color: #f92672">.</span><span style="color: #f8f8f2">forward(</span><span style="color: #ae81ff">100</span><span style="color: #f8f8f2">)</span>
+<span style="color: #f8f8f2">t</span><span style="color: #f92672">.</span><span style="color: #f8f8f2">write(</span><span style="color: #e6db74">&quot;  r = 100 units&quot;</span><span style="color: #f8f8f2">)</span>
+
+<span style="color: #f8f8f2">t</span><span style="color: #f92672">.</span><span style="color: #f8f8f2">left(</span><span style="color: #ae81ff">90</span><span style="color: #f8f8f2">)</span>
+<span style="color: #f8f8f2">t</span><span style="color: #f92672">.</span><span style="color: #f8f8f2">forward(</span><span style="color: #ae81ff">150</span><span style="color: #f8f8f2">)</span>
+<span style="color: #f8f8f2">t</span><span style="color: #f92672">.</span><span style="color: #f8f8f2">write(</span><span style="color: #e6db74">&quot;  h = 300 units&quot;</span><span style="color: #f8f8f2">)</span>
+<span style="color: #f8f8f2">t</span><span style="color: #f92672">.</span><span style="color: #f8f8f2">forward(</span><span style="color: #ae81ff">150</span><span style="color: #f8f8f2">)</span>
+</pre>
+    </div>
+
+    <h1>18. Parallel Projection <code><a href="https://repl.it/@dileepdodla/ParallelProjection" target="_blank">▶</a></code></h1>
+    <div class="center">
+<pre style="margin: 0; line-height: 125%"><span style="color: #f92672">import</span> <span style="color: #f8f8f2">turtle</span>
+<span style="color: #f8f8f2">turtle</span><span style="color: #f92672">.</span><span style="color: #f8f8f2">title(</span><span style="color: #e6db74">&quot;Parallel Projection&quot;</span><span style="color: #f8f8f2">)</span>
+
+<span style="color: #f8f8f2">screen</span> <span style="color: #f92672">=</span> <span style="color: #f8f8f2">turtle</span><span style="color: #f92672">.</span><span style="color: #f8f8f2">Screen()</span>
+<span style="color: #f8f8f2">screen</span><span style="color: #f92672">.</span><span style="color: #f8f8f2">bgcolor(</span><span style="color: #e6db74">&quot;black&quot;</span><span style="color: #f8f8f2">)</span>
+
+<span style="color: #f8f8f2">t</span> <span style="color: #f92672">=</span> <span style="color: #f8f8f2">turtle</span><span style="color: #f92672">.</span><span style="color: #f8f8f2">Turtle()</span>
+<span style="color: #f8f8f2">t</span><span style="color: #f92672">.</span><span style="color: #f8f8f2">width(</span><span style="color: #ae81ff">3</span><span style="color: #f8f8f2">)</span>
+<span style="color: #f8f8f2">t</span><span style="color: #f92672">.</span><span style="color: #f8f8f2">speed(</span><span style="color: #e6db74">&quot;fastest&quot;</span><span style="color: #f8f8f2">)</span>
+<span style="color: #f8f8f2">t</span><span style="color: #f92672">.</span><span style="color: #f8f8f2">color(</span><span style="color: #e6db74">&quot;#121212&quot;</span><span style="color: #f8f8f2">,</span><span style="color: #e6db74">&quot;white&quot;</span><span style="color: #f8f8f2">)</span>
+
+<span style="color: #66d9ef">def</span> <span style="color: #a6e22e">dot</span><span style="color: #f8f8f2">(tt):</span>
+    <span style="color: #f8f8f2">tt</span><span style="color: #f92672">.</span><span style="color: #f8f8f2">pendown()</span>
+    <span style="color: #f8f8f2">tt</span><span style="color: #f92672">.</span><span style="color: #f8f8f2">dot()</span>
+    <span style="color: #f8f8f2">tt</span><span style="color: #f92672">.</span><span style="color: #f8f8f2">penup()</span>
+
+<span style="color: #66d9ef">def</span> <span style="color: #a6e22e">goto</span><span style="color: #f8f8f2">(tt,x,y):</span>
+    <span style="color: #f8f8f2">tt</span><span style="color: #f92672">.</span><span style="color: #f8f8f2">penup()</span>
+    <span style="color: #f8f8f2">tt</span><span style="color: #f92672">.</span><span style="color: #f8f8f2">goto(x,y)</span>
+    <span style="color: #f8f8f2">tt</span><span style="color: #f92672">.</span><span style="color: #f8f8f2">pendown()</span>
+
+<span style="color: #66d9ef">def</span> <span style="color: #a6e22e">drawSquare</span><span style="color: #f8f8f2">(tt):</span>
+    <span style="color: #f8f8f2">tt</span><span style="color: #f92672">.</span><span style="color: #f8f8f2">begin_fill()</span>
+    <span style="color: #66d9ef">for</span> <span style="color: #f8f8f2">i</span> <span style="color: #f92672">in</span> <span style="color: #f8f8f2">range(</span><span style="color: #ae81ff">4</span><span style="color: #f8f8f2">):</span>
+        <span style="color: #f8f8f2">tt</span><span style="color: #f92672">.</span><span style="color: #f8f8f2">left(</span><span style="color: #ae81ff">90</span><span style="color: #f8f8f2">)</span>
+        <span style="color: #f8f8f2">tt</span><span style="color: #f92672">.</span><span style="color: #f8f8f2">forward(</span><span style="color: #ae81ff">50</span><span style="color: #f8f8f2">)</span>
+    <span style="color: #f8f8f2">tt</span><span style="color: #f92672">.</span><span style="color: #f8f8f2">end_fill()</span>
+
+<span style="color: #66d9ef">def</span> <span style="color: #a6e22e">drawArrow</span><span style="color: #f8f8f2">():</span>
+    <span style="color: #f8f8f2">pen</span><span style="color: #f92672">.</span><span style="color: #f8f8f2">left(</span><span style="color: #ae81ff">135</span><span style="color: #f8f8f2">)</span>
+    <span style="color: #f8f8f2">pen</span><span style="color: #f92672">.</span><span style="color: #f8f8f2">forward(</span><span style="color: #ae81ff">20</span><span style="color: #f8f8f2">)</span>
+    <span style="color: #f8f8f2">pen</span><span style="color: #f92672">.</span><span style="color: #f8f8f2">backward(</span><span style="color: #ae81ff">20</span><span style="color: #f8f8f2">)</span>
+    <span style="color: #f8f8f2">pen</span><span style="color: #f92672">.</span><span style="color: #f8f8f2">left(</span><span style="color: #ae81ff">90</span><span style="color: #f8f8f2">)</span>
+    <span style="color: #f8f8f2">pen</span><span style="color: #f92672">.</span><span style="color: #f8f8f2">forward(</span><span style="color: #ae81ff">20</span><span style="color: #f8f8f2">)</span>
+
+<span style="color: #f8f8f2">t</span><span style="color: #f92672">.</span><span style="color: #f8f8f2">left(</span><span style="color: #ae81ff">45</span><span style="color: #f8f8f2">)</span>
+
+<span style="color: #f8f8f2">t</span><span style="color: #f92672">.</span><span style="color: #f8f8f2">begin_fill()</span>
+<span style="color: #f8f8f2">t</span><span style="color: #f92672">.</span><span style="color: #f8f8f2">forward(</span><span style="color: #ae81ff">50</span><span style="color: #f8f8f2">)</span>
+<span style="color: #66d9ef">for</span> <span style="color: #f8f8f2">i</span> <span style="color: #f92672">in</span> <span style="color: #f8f8f2">range(</span><span style="color: #ae81ff">3</span><span style="color: #f8f8f2">):</span>
+    <span style="color: #f8f8f2">t</span><span style="color: #f92672">.</span><span style="color: #f8f8f2">left(</span><span style="color: #ae81ff">90</span><span style="color: #f8f8f2">)</span>
+    <span style="color: #f8f8f2">t</span><span style="color: #f92672">.</span><span style="color: #f8f8f2">forward(</span><span style="color: #ae81ff">50</span><span style="color: #f8f8f2">)</span>
+    
+<span style="color: #f8f8f2">t</span><span style="color: #f92672">.</span><span style="color: #f8f8f2">right(</span><span style="color: #ae81ff">45</span><span style="color: #f8f8f2">)</span>
+<span style="color: #f8f8f2">t</span><span style="color: #f92672">.</span><span style="color: #f8f8f2">forward(</span><span style="color: #ae81ff">50</span><span style="color: #f8f8f2">)</span>
+<span style="color: #f8f8f2">t</span><span style="color: #f92672">.</span><span style="color: #f8f8f2">left(</span><span style="color: #ae81ff">135</span><span style="color: #f8f8f2">)</span>
+<span style="color: #f8f8f2">t</span><span style="color: #f92672">.</span><span style="color: #f8f8f2">forward(</span><span style="color: #ae81ff">50</span><span style="color: #f8f8f2">)</span>
+<span style="color: #f8f8f2">t</span><span style="color: #f92672">.</span><span style="color: #f8f8f2">left(</span><span style="color: #ae81ff">45</span><span style="color: #f8f8f2">)</span>
+<span style="color: #f8f8f2">t</span><span style="color: #f92672">.</span><span style="color: #f8f8f2">forward(</span><span style="color: #ae81ff">50</span><span style="color: #f8f8f2">)</span>
+<span style="color: #f8f8f2">t</span><span style="color: #f92672">.</span><span style="color: #f8f8f2">left(</span><span style="color: #ae81ff">135</span><span style="color: #f8f8f2">)</span>
+<span style="color: #f8f8f2">t</span><span style="color: #f92672">.</span><span style="color: #f8f8f2">forward(</span><span style="color: #ae81ff">50</span><span style="color: #f8f8f2">)</span>
+
+<span style="color: #f8f8f2">t</span><span style="color: #f92672">.</span><span style="color: #f8f8f2">right(</span><span style="color: #ae81ff">90</span><span style="color: #f8f8f2">)</span>
+<span style="color: #f8f8f2">t</span><span style="color: #f92672">.</span><span style="color: #f8f8f2">forward(</span><span style="color: #ae81ff">50</span><span style="color: #f8f8f2">)</span>
+<span style="color: #f8f8f2">t</span><span style="color: #f92672">.</span><span style="color: #f8f8f2">left(</span><span style="color: #ae81ff">135</span><span style="color: #f8f8f2">)</span>
+<span style="color: #f8f8f2">t</span><span style="color: #f92672">.</span><span style="color: #f8f8f2">forward(</span><span style="color: #ae81ff">50</span><span style="color: #f8f8f2">)</span>
+<span style="color: #f8f8f2">t</span><span style="color: #f92672">.</span><span style="color: #f8f8f2">left(</span><span style="color: #ae81ff">45</span><span style="color: #f8f8f2">)</span>
+<span style="color: #f8f8f2">t</span><span style="color: #f92672">.</span><span style="color: #f8f8f2">forward(</span><span style="color: #ae81ff">50</span><span style="color: #f8f8f2">)</span>
+<span style="color: #f8f8f2">t</span><span style="color: #f92672">.</span><span style="color: #f8f8f2">end_fill()</span>
+
+<span style="color: #f8f8f2">t</span><span style="color: #f92672">.</span><span style="color: #f8f8f2">left(</span><span style="color: #ae81ff">112.5</span><span style="color: #f8f8f2">)</span>
+<span style="color: #f8f8f2">t</span><span style="color: #f92672">.</span><span style="color: #f8f8f2">penup()</span>
+<span style="color: #f8f8f2">t</span><span style="color: #f92672">.</span><span style="color: #f8f8f2">forward(</span><span style="color: #ae81ff">47</span><span style="color: #f8f8f2">)</span>
+<span style="color: #f8f8f2">dot(t)</span>
+<span style="color: #f8f8f2">t</span><span style="color: #f92672">.</span><span style="color: #f8f8f2">backward(</span><span style="color: #ae81ff">47</span><span style="color: #f8f8f2">)</span>
+<span style="color: #f8f8f2">t</span><span style="color: #f92672">.</span><span style="color: #f8f8f2">left(</span><span style="color: #ae81ff">45</span><span style="color: #f8f8f2">)</span>
+
+<span style="color: #66d9ef">for</span> <span style="color: #f8f8f2">i</span> <span style="color: #f92672">in</span> <span style="color: #f8f8f2">range(</span><span style="color: #ae81ff">2</span><span style="color: #f8f8f2">):</span>
+    <span style="color: #f8f8f2">t</span><span style="color: #f92672">.</span><span style="color: #f8f8f2">forward(</span><span style="color: #ae81ff">22.5</span><span style="color: #f8f8f2">)</span>
+    <span style="color: #f8f8f2">dot(t)</span>
+    <span style="color: #f8f8f2">t</span><span style="color: #f92672">.</span><span style="color: #f8f8f2">forward(</span><span style="color: #ae81ff">22.5</span><span style="color: #f8f8f2">)</span>
+
+<span style="color: #f8f8f2">t</span><span style="color: #f92672">.</span><span style="color: #f8f8f2">backward(</span><span style="color: #ae81ff">90</span><span style="color: #f8f8f2">)</span>
+<span style="color: #f8f8f2">t</span><span style="color: #f92672">.</span><span style="color: #f8f8f2">right(</span><span style="color: #ae81ff">22.5</span><span style="color: #f8f8f2">)</span>
+<span style="color: #f8f8f2">t</span><span style="color: #f92672">.</span><span style="color: #f8f8f2">forward(</span><span style="color: #ae81ff">50</span><span style="color: #f8f8f2">)</span>
+<span style="color: #f8f8f2">t</span><span style="color: #f92672">.</span><span style="color: #f8f8f2">right(</span><span style="color: #ae81ff">45</span><span style="color: #f8f8f2">)</span>
+<span style="color: #f8f8f2">t</span><span style="color: #f92672">.</span><span style="color: #f8f8f2">forward(</span><span style="color: #ae81ff">50</span><span style="color: #f8f8f2">)</span>
+<span style="color: #f8f8f2">t</span><span style="color: #f92672">.</span><span style="color: #f8f8f2">left(</span><span style="color: #ae81ff">135</span><span style="color: #f8f8f2">)</span>
+
+<span style="color: #66d9ef">for</span> <span style="color: #f8f8f2">i</span> <span style="color: #f92672">in</span> <span style="color: #f8f8f2">range(</span><span style="color: #ae81ff">3</span><span style="color: #f8f8f2">):</span>
+    <span style="color: #f8f8f2">t</span><span style="color: #f92672">.</span><span style="color: #f8f8f2">forward(</span><span style="color: #ae81ff">18</span><span style="color: #f8f8f2">)</span>
+    <span style="color: #f8f8f2">dot(t)</span>
+    
+<span style="color: #f8f8f2">t</span><span style="color: #f92672">.</span><span style="color: #f8f8f2">home()</span>
+<span style="color: #f8f8f2">t</span><span style="color: #f92672">.</span><span style="color: #f8f8f2">ht()</span>
+
+<span style="color: #f8f8f2">pen</span> <span style="color: #f92672">=</span> <span style="color: #f8f8f2">t</span><span style="color: #f92672">.</span><span style="color: #f8f8f2">clone()</span>
+<span style="color: #f8f8f2">pen</span><span style="color: #f92672">.</span><span style="color: #f8f8f2">width(</span><span style="color: #ae81ff">4</span><span style="color: #f8f8f2">)</span>
+<span style="color: #f8f8f2">pen</span><span style="color: #f92672">.</span><span style="color: #f8f8f2">color(</span><span style="color: #e6db74">&quot;white&quot;</span><span style="color: #f8f8f2">)</span>
+
+<span style="color: #f8f8f2">goto(pen,</span><span style="color: #ae81ff">180</span><span style="color: #f8f8f2">,</span><span style="color: #f92672">-</span><span style="color: #ae81ff">220</span><span style="color: #f8f8f2">)</span>
+<span style="color: #f8f8f2">pen</span><span style="color: #f92672">.</span><span style="color: #f8f8f2">write(</span><span style="color: #e6db74">&quot;Front View&quot;</span><span style="color: #f8f8f2">,align</span><span style="color: #f92672">=</span><span style="color: #e6db74">&quot;center&quot;</span><span style="color: #f8f8f2">,font</span><span style="color: #f92672">=</span><span style="color: #f8f8f2">(</span><span style="color: #e6db74">&quot;Verdana&quot;</span><span style="color: #f8f8f2">,</span><span style="color: #ae81ff">20</span><span style="color: #f8f8f2">,</span><span style="color: #e6db74">&quot;normal&quot;</span><span style="color: #f8f8f2">))</span>
+<span style="color: #f8f8f2">front</span> <span style="color: #f92672">=</span> <span style="color: #f8f8f2">t</span><span style="color: #f92672">.</span><span style="color: #f8f8f2">clone()</span>
+<span style="color: #f8f8f2">goto(front,</span><span style="color: #ae81ff">200</span><span style="color: #f8f8f2">,</span><span style="color: #f92672">-</span><span style="color: #ae81ff">160</span><span style="color: #f8f8f2">)</span>
+<span style="color: #f8f8f2">drawSquare(front)</span>
+<span style="color: #f8f8f2">front</span><span style="color: #f92672">.</span><span style="color: #f8f8f2">penup()</span>
+<span style="color: #f8f8f2">front</span><span style="color: #f92672">.</span><span style="color: #f8f8f2">left(</span><span style="color: #ae81ff">135</span><span style="color: #f8f8f2">)</span>
+<span style="color: #f8f8f2">front</span><span style="color: #f92672">.</span><span style="color: #f8f8f2">forward(</span><span style="color: #ae81ff">35.36</span><span style="color: #f8f8f2">)</span>
+<span style="color: #f8f8f2">dot(front)</span>
+<span style="color: #f8f8f2">pen</span><span style="color: #f92672">.</span><span style="color: #f8f8f2">left(</span><span style="color: #ae81ff">135</span><span style="color: #f8f8f2">)</span>
+<span style="color: #f8f8f2">goto(pen,</span><span style="color: #ae81ff">120</span><span style="color: #f8f8f2">,</span><span style="color: #f92672">-</span><span style="color: #ae81ff">120</span><span style="color: #f8f8f2">)</span>
+<span style="color: #f8f8f2">pen</span><span style="color: #f92672">.</span><span style="color: #f8f8f2">goto(</span><span style="color: #ae81ff">40</span><span style="color: #f8f8f2">,</span><span style="color: #f92672">-</span><span style="color: #ae81ff">40</span><span style="color: #f8f8f2">)</span>
+<span style="color: #f8f8f2">drawArrow()</span>
+
+<span style="color: #f8f8f2">goto(pen,</span><span style="color: #ae81ff">0</span><span style="color: #f8f8f2">,</span><span style="color: #ae81ff">240</span><span style="color: #f8f8f2">)</span>
+<span style="color: #f8f8f2">pen</span><span style="color: #f92672">.</span><span style="color: #f8f8f2">write(</span><span style="color: #e6db74">&quot;Top View&quot;</span><span style="color: #f8f8f2">,align</span><span style="color: #f92672">=</span><span style="color: #e6db74">&quot;center&quot;</span><span style="color: #f8f8f2">,font</span><span style="color: #f92672">=</span><span style="color: #f8f8f2">(</span><span style="color: #e6db74">&quot;Verdana&quot;</span><span style="color: #f8f8f2">,</span><span style="color: #ae81ff">20</span><span style="color: #f8f8f2">,</span><span style="color: #e6db74">&quot;normal&quot;</span><span style="color: #f8f8f2">))</span>
+<span style="color: #f8f8f2">top</span> <span style="color: #f92672">=</span> <span style="color: #f8f8f2">t</span><span style="color: #f92672">.</span><span style="color: #f8f8f2">clone()</span>
+<span style="color: #f8f8f2">goto(top,</span><span style="color: #ae81ff">20</span><span style="color: #f8f8f2">,</span><span style="color: #ae81ff">160</span><span style="color: #f8f8f2">)</span>
+<span style="color: #f8f8f2">drawSquare(top)</span>
+<span style="color: #f8f8f2">top</span><span style="color: #f92672">.</span><span style="color: #f8f8f2">penup()</span>
+<span style="color: #f8f8f2">top</span><span style="color: #f92672">.</span><span style="color: #f8f8f2">left(</span><span style="color: #ae81ff">135</span><span style="color: #f8f8f2">)</span>
+<span style="color: #66d9ef">for</span> <span style="color: #f8f8f2">i</span> <span style="color: #f92672">in</span> <span style="color: #f8f8f2">range(</span><span style="color: #ae81ff">3</span><span style="color: #f8f8f2">):</span>
+    <span style="color: #f8f8f2">top</span><span style="color: #f92672">.</span><span style="color: #f8f8f2">forward(</span><span style="color: #ae81ff">18</span><span style="color: #f8f8f2">)</span>
+    <span style="color: #f8f8f2">dot(top)</span>
+<span style="color: #f8f8f2">pen</span><span style="color: #f92672">.</span><span style="color: #f8f8f2">right(</span><span style="color: #ae81ff">90</span><span style="color: #f8f8f2">)</span>
+<span style="color: #f8f8f2">goto(pen,</span><span style="color: #ae81ff">0</span><span style="color: #f8f8f2">,</span><span style="color: #ae81ff">140</span><span style="color: #f8f8f2">)</span>
+<span style="color: #f8f8f2">pen</span><span style="color: #f92672">.</span><span style="color: #f8f8f2">goto(</span><span style="color: #ae81ff">0</span><span style="color: #f8f8f2">,</span><span style="color: #ae81ff">80</span><span style="color: #f8f8f2">)</span>
+<span style="color: #f8f8f2">drawArrow()</span>
+
+<span style="color: #f8f8f2">goto(pen,</span><span style="color: #f92672">-</span><span style="color: #ae81ff">180</span><span style="color: #f8f8f2">,</span><span style="color: #f92672">-</span><span style="color: #ae81ff">220</span><span style="color: #f8f8f2">)</span>
+<span style="color: #f8f8f2">pen</span><span style="color: #f92672">.</span><span style="color: #f8f8f2">write(</span><span style="color: #e6db74">&quot;Side View&quot;</span><span style="color: #f8f8f2">,align</span><span style="color: #f92672">=</span><span style="color: #e6db74">&quot;center&quot;</span><span style="color: #f8f8f2">,font</span><span style="color: #f92672">=</span><span style="color: #f8f8f2">(</span><span style="color: #e6db74">&quot;Verdana&quot;</span><span style="color: #f8f8f2">,</span><span style="color: #ae81ff">20</span><span style="color: #f8f8f2">,</span><span style="color: #e6db74">&quot;normal&quot;</span><span style="color: #f8f8f2">))</span>
+<span style="color: #f8f8f2">side</span> <span style="color: #f92672">=</span> <span style="color: #f8f8f2">t</span><span style="color: #f92672">.</span><span style="color: #f8f8f2">clone()</span>
+<span style="color: #f8f8f2">goto(side,</span><span style="color: #f92672">-</span><span style="color: #ae81ff">160</span><span style="color: #f8f8f2">,</span><span style="color: #f92672">-</span><span style="color: #ae81ff">160</span><span style="color: #f8f8f2">)</span>
+<span style="color: #f8f8f2">drawSquare(side)</span>
+<span style="color: #f8f8f2">side</span><span style="color: #f92672">.</span><span style="color: #f8f8f2">penup()</span>
+<span style="color: #f8f8f2">side</span><span style="color: #f92672">.</span><span style="color: #f8f8f2">left(</span><span style="color: #ae81ff">135</span><span style="color: #f8f8f2">)</span>
+<span style="color: #66d9ef">for</span> <span style="color: #f8f8f2">i</span> <span style="color: #f92672">in</span> <span style="color: #f8f8f2">range(</span><span style="color: #ae81ff">2</span><span style="color: #f8f8f2">):</span>
+    <span style="color: #f8f8f2">side</span><span style="color: #f92672">.</span><span style="color: #f8f8f2">forward(</span><span style="color: #ae81ff">18</span><span style="color: #f8f8f2">)</span>
+    <span style="color: #f8f8f2">dot(side)</span>
+    <span style="color: #f8f8f2">side</span><span style="color: #f92672">.</span><span style="color: #f8f8f2">forward(</span><span style="color: #ae81ff">18</span><span style="color: #f8f8f2">)</span>
+<span style="color: #f8f8f2">pen</span><span style="color: #f92672">.</span><span style="color: #f8f8f2">right(</span><span style="color: #ae81ff">90</span><span style="color: #f8f8f2">)</span>
+<span style="color: #f8f8f2">goto(pen,</span><span style="color: #f92672">-</span><span style="color: #ae81ff">120</span><span style="color: #f8f8f2">,</span><span style="color: #f92672">-</span><span style="color: #ae81ff">120</span><span style="color: #f8f8f2">)</span>
+<span style="color: #f8f8f2">pen</span><span style="color: #f92672">.</span><span style="color: #f8f8f2">goto(</span><span style="color: #f92672">-</span><span style="color: #ae81ff">40</span><span style="color: #f8f8f2">,</span><span style="color: #f92672">-</span><span style="color: #ae81ff">40</span><span style="color: #f8f8f2">)</span>
+<span style="color: #f8f8f2">drawArrow()</span>
+</pre>
+    </div>
+
+</body>
+</html>
