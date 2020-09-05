@@ -4,7 +4,7 @@
 <head>
     <meta charset="UTF-8">
     <meta name="viewport" content="width=device-width, initial-scale=1.0">
-    <link rel="icon" type="image/png" href="favicon.png" />
+    <link rel="icon" type="image/png" href="images/favicon.png" />
     <title>CG Lab</title>
     <style>
         ::selection {
@@ -29,7 +29,8 @@
         div {
             background: #272822;
             overflow: auto;
-            border: solid goldenrod;
+            border: 1px solid goldenrod;
+            box-shadow: 0px 0px 5px darkgoldenrod;
             border-width: .1em .1em .1em .6em;
             padding: .2em .6em;
         }
@@ -48,12 +49,20 @@
 
         #music{
             cursor: pointer;
+            border: none;
+            box-shadow: none;
         }
 
         .center {
             margin: auto;
             width: 70%;
         }
+
+        img{
+            border: 1px solid cornflowerblue;
+            box-shadow: 0px 0px 8px cornflowerblue;
+        }
+        
     </style>
     <script>     
         var music = new Audio('audio.mp3');
@@ -75,11 +84,7 @@
     <h1
         style="color: goldenrod; text-shadow: 0px 0px 3px goldenrod; font-family: 'Lucida Sans', 'Lucida Sans Regular', 'Lucida Grande', 'Lucida Sans Unicode', Geneva, Verdana, sans-serif;">
         Computer Graphics Lab</h1>
-    <img id="music" alt="music" src="music.png" width="60" height="60" onclick="song()">
-    &nbsp;&nbsp;
-    <a href="CG.docx" download>
-        <img alt="Dowload as PDF (Dark Theme)" src="doc.png" width="60" height="60">
-    </a>
+    <img id="music" alt="music" src="images/music.png" width="60" height="60" onclick="song()">
 
     <h1>1. Point <code><a href="https://repl.it/@dileepdodla/point" target="_blank">▶</a></code></h1>
     <div class="center">
@@ -100,6 +105,7 @@
 <span style="color: #f8f8f2">t</span><span style="color: #f92672">.</span><span style="color: #f8f8f2">ht()</span>
 </pre>
     </div>
+    <br><br><img src="outputs/1.PNG" width="250" height="250">
 
     <h1>2. Line <code><a href="https://repl.it/@dileepdodla/line" target="_blank">▶</a></code></h1>
     <div class="center">
@@ -121,6 +127,7 @@
 <span style="color: #f8f8f2">t</span><span style="color: #f92672">.</span><span style="color: #f8f8f2">ht()</span>
 </pre>
     </div>
+    <br><br><img src="outputs/2.PNG" width="250" height="250">
 
     <h1>3. Triangle <code><a href="https://repl.it/@dileepdodla/triangle" target="_blank">▶</a></code></h1>
     <div class="center">
@@ -143,6 +150,7 @@
 <span style="color: #f8f8f2">t</span><span style="color: #f92672">.</span><span style="color: #f8f8f2">ht()</span>
 </pre>
     </div>
+    <br><br><img src="outputs/3.PNG" width="250" height="250">
 
     <h1>4. Rectangle <code><a href="https://repl.it/@dileepdodla/rectangle" target="_blank">▶</a></code></h1>
     <div class="center">
@@ -167,6 +175,7 @@
 <span style="color: #f8f8f2">t</span><span style="color: #f92672">.</span><span style="color: #f8f8f2">ht()</span>
 </pre>
     </div>
+    <br><br><img src="outputs/4.PNG" width="250" height="250">
 
     <h1>5. Circle <code><a href="https://repl.it/@dileepdodla/circle" target="_blank">▶</a></code></h1>
     <div class="center">
@@ -186,6 +195,7 @@
 <span style="color: #f8f8f2">t</span><span style="color: #f92672">.</span><span style="color: #f8f8f2">ht()</span>
 </pre>
     </div>
+    <br><br><img src="outputs/5.PNG" width="250" height="200">
 
     <h1>6. Ellipse <code><a href="https://repl.it/@dileepdodla/ellipse" target="_blank">▶</a></code></h1>
     <div class="center">
@@ -207,6 +217,7 @@
 <span style="color: #f8f8f2">t</span><span style="color: #f92672">.</span><span style="color: #f8f8f2">ht()</span>
 </pre>
     </div>
+    <br><br><img src="outputs/6.PNG" width="250" height="250">
 
     <h1>7. Rotation <code><a href="https://repl.it/@dileepdodla/rotation" target="_blank">▶</a></code></h1>
     <div class="center">
@@ -237,6 +248,7 @@
     <span style="color: #f8f8f2">screen</span><span style="color: #f92672">.</span><span style="color: #f8f8f2">delay(</span><span style="color: #ae81ff">1</span><span style="color: #f8f8f2">)</span>
 </pre>
     </div>
+    <br><br><img src="outputs/7.gif" width="250" height="250">
 
     <h1>8. 2D Object Filling <code><a href="https://repl.it/@dileepdodla/2DObjectFilling" target="_blank">▶</a></code>
     </h1>
@@ -260,6 +272,7 @@
 <span style="color: #f8f8f2">t</span><span style="color: #f92672">.</span><span style="color: #f8f8f2">ht()</span>
 </pre>
     </div>
+    <br><br><img src="outputs/8.gif" width="250" height="250">
 
     <h1>9. 2D Object Transformations
         <code><a href="https://repl.it/@dileepdodla/2DObjectTransformations" target="_blank">▶</a></code></h1>
@@ -331,6 +344,7 @@
 <span style="color: #f8f8f2">t</span><span style="color: #f92672">.</span><span style="color: #f8f8f2">shearfactor(</span><span style="color: #f92672">-</span><span style="color: #ae81ff">4.5</span><span style="color: #f8f8f2">)</span>
 </pre>
     </div>
+    <br><br><img src="outputs/9.gif" width="250" height="300">
 
     <h1>10. Composition of Two Rotations
         <code><a href="https://repl.it/@dileepdodla/CompositionOfTwoRotations" target="_blank">▶</a></code></h1>
@@ -370,6 +384,7 @@
     <span style="color: #f8f8f2">screen</span><span style="color: #f92672">.</span><span style="color: #f8f8f2">delay(</span><span style="color: #ae81ff">1</span><span style="color: #f8f8f2">)</span>
 </pre>
     </div>
+    <br><br><img src="outputs/10.gif" width="250" height="250">
 
     <h1>11. Cohen-Sutherland Line Clipping
         <code><a href="https://repl.it/@dileepdodla/CohenSutherlandLineClipping" target="_blank">▶</a></code></h1>
@@ -511,6 +526,7 @@
     <span style="color: #f8f8f2">cohenSutherlandClip(point[</span><span style="color: #ae81ff">0</span><span style="color: #f8f8f2">],</span> <span style="color: #f8f8f2">point[</span><span style="color: #ae81ff">1</span><span style="color: #f8f8f2">],</span> <span style="color: #f8f8f2">point[</span><span style="color: #ae81ff">2</span><span style="color: #f8f8f2">],</span> <span style="color: #f8f8f2">point[</span><span style="color: #ae81ff">3</span><span style="color: #f8f8f2">])</span>
 </pre>
     </div>
+    <br><br><img src="outputs/11.gif" width="250" height="250">
 
     <h1>12. Sutherland-Hodgman Polygon Clipping
         <code><a href="https://repl.it/@dileepdodla/SutherlandHodgmanPolygonClipping" target="_blank">▶</a></code></h1>
@@ -601,6 +617,7 @@
 <span style="color: #f8f8f2">t</span><span style="color: #f92672">.</span><span style="color: #f8f8f2">ht()</span>
 </pre>
     </div>
+    <br><br><img src="outputs/12.gif" width="250" height="250">
 
     <h1>13. 3D Object <code><a href="https://repl.it/@dileepdodla/3DObject" target="_blank">▶</a></code></h1>
     <div class="center">
@@ -636,6 +653,7 @@
 <span style="color: #f8f8f2">t</span><span style="color: #f92672">.</span><span style="color: #f8f8f2">ht()</span>
 </pre>
     </div>
+    <br><br><img src="outputs/13.PNG" width="250" height="250">
 
     <h1>14. 3D Object Filling <code><a href="https://repl.it/@dileepdodla/3DObjectFilling" target="_blank">▶</a></code>
     </h1>
@@ -695,6 +713,7 @@
 <span style="color: #f8f8f2">t</span><span style="color: #f92672">.</span><span style="color: #f8f8f2">end_fill()</span>
 </pre>
     </div>
+    <br><br><img src="outputs/14.gif" width="250" height="250">
 
     <h1>15. 3D Object Transformations
         <code><a href="https://repl.it/@dileepdodla/3DObjectTransformations" target="_blank">▶</a></code></h1>
@@ -796,6 +815,7 @@
 <span style="color: #f8f8f2">rotate(</span><span style="color: #ae81ff">180</span><span style="color: #f8f8f2">)</span>
 </pre>
     </div>
+    <br><br><img src="outputs/15.gif" width="250" height="300">
 
     <h1>16. Cubic Bezier Curve
         <code><a href="https://repl.it/@dileepdodla/CubicBezierCurve" target="_blank">▶</a></code></h1>
@@ -840,6 +860,7 @@
     <span style="color: #f8f8f2">b</span><span style="color: #f92672">.</span><span style="color: #f8f8f2">goto(bx(t),by(t))</span>
 </pre>
     </div>
+    <br><br><img src="outputs/16.gif" width="250" height="250">
 
     <h1>17. Cylinder <code><a href="https://repl.it/@dileepdodla/cylinder" target="_blank">▶</a></code></h1>
     <div class="center">
@@ -904,6 +925,7 @@
 <span style="color: #f8f8f2">t</span><span style="color: #f92672">.</span><span style="color: #f8f8f2">forward(</span><span style="color: #ae81ff">150</span><span style="color: #f8f8f2">)</span>
 </pre>
     </div>
+    <br><br><img src="outputs/17.gif" width="250" height="250">
 
     <h1>18. Parallel Projection
         <code><a href="https://repl.it/@dileepdodla/ParallelProjection" target="_blank">▶</a></code></h1>
@@ -1044,8 +1066,10 @@
 <span style="color: #f8f8f2">drawArrow()</span>
 </pre>
     </div>
-    <br><br>
-    <img src="last.gif" style="min-width: 200px; max-width: 80%;">
+    <br><br><img src="outputs/18.gif" width="280" height="300">
+
+    <br><br><br>
+    <img src="images/last.gif" style="min-width: 200px; max-width: 80%; height: auto; border: none; box-shadow: 0px 0px 10px white;">
     <br><br>
 </body>
 
