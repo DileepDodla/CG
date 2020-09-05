@@ -47,7 +47,7 @@
             text-shadow: 0px 0px 5px chartreuse;
         }
 
-        #music{
+        #music {
             cursor: pointer;
             border: none;
             box-shadow: none;
@@ -58,23 +58,29 @@
             width: 70%;
         }
 
-        img{
+        img {
             border: 1px solid cornflowerblue;
             box-shadow: 0px 0px 8px cornflowerblue;
         }
-        
     </style>
-    <script>     
+    <script>
         var music = new Audio('audio.mp3');
         music.loop = true;
-        
-        function song(){
-            if(music.paused){
+
+        function song() {
+            if (music.paused) {
                 music.play();
             }
-            else{
+            else {
                 music.pause();
             }
+        }
+
+        function select(parent) {
+            window.getSelection()
+                .selectAllChildren(
+                    parent.children[0]
+                );
         }
     </script>
 </head>
@@ -87,7 +93,7 @@
     <img id="music" alt="music" src="images/music.png" width="60" height="60" onclick="song()">
 
     <h1>1. Point <code><a href="https://repl.it/@dileepdodla/point" target="_blank">▶</a></code></h1>
-    <div class="center">
+    <div class="center" onclick="select(this);">
         <pre style="margin: 0; line-height: 125%;">
 <span style="color: #f92672">import</span> <span style="color: #f8f8f2">turtle</span>
 <span style="color: #f8f8f2">turtle</span><span style="color: #f92672">.</span><span style="color: #f8f8f2">title(</span><span style="color: #e6db74">&quot;Point&quot;</span><span style="color: #f8f8f2">)</span>
@@ -108,7 +114,7 @@
     <br><br><img src="outputs/1.PNG" width="250" height="250">
 
     <h1>2. Line <code><a href="https://repl.it/@dileepdodla/line" target="_blank">▶</a></code></h1>
-    <div class="center">
+    <div class="center" onclick="select(this);">
         <pre style="margin: 0; line-height: 125%">
 <span style="color: #f92672">import</span> <span style="color: #f8f8f2">turtle</span>
 <span style="color: #f8f8f2">turtle</span><span style="color: #f92672">.</span><span style="color: #f8f8f2">title(</span><span style="color: #e6db74">&quot;Line&quot;</span><span style="color: #f8f8f2">)</span>
@@ -130,7 +136,7 @@
     <br><br><img src="outputs/2.PNG" width="250" height="250">
 
     <h1>3. Triangle <code><a href="https://repl.it/@dileepdodla/triangle" target="_blank">▶</a></code></h1>
-    <div class="center">
+    <div class="center" onclick="select(this);">
         <pre style="margin: 0; line-height: 125%">
 <span style="color: #f92672">import</span> <span style="color: #f8f8f2">turtle</span>
 <span style="color: #f8f8f2">turtle</span><span style="color: #f92672">.</span><span style="color: #f8f8f2">title(</span><span style="color: #e6db74">&quot;Traingle&quot;</span><span style="color: #f8f8f2">)</span>
@@ -153,7 +159,7 @@
     <br><br><img src="outputs/3.PNG" width="250" height="250">
 
     <h1>4. Rectangle <code><a href="https://repl.it/@dileepdodla/rectangle" target="_blank">▶</a></code></h1>
-    <div class="center">
+    <div class="center" onclick="select(this);">
         <pre style="margin: 0; line-height: 125%">
 <span style="color: #f92672">import</span> <span style="color: #f8f8f2">turtle</span>
 <span style="color: #f8f8f2">turtle</span><span style="color: #f92672">.</span><span style="color: #f8f8f2">title(</span><span style="color: #e6db74">&quot;Rectangle&quot;</span><span style="color: #f8f8f2">)</span>
@@ -178,7 +184,7 @@
     <br><br><img src="outputs/4.PNG" width="250" height="250">
 
     <h1>5. Circle <code><a href="https://repl.it/@dileepdodla/circle" target="_blank">▶</a></code></h1>
-    <div class="center">
+    <div class="center" onclick="select(this);">
         <pre style="margin: 0; line-height: 125%"><span style="color: #f92672">import</span> <span style="color: #f8f8f2">turtle</span>
 <span style="color: #f8f8f2">turtle</span><span style="color: #f92672">.</span><span style="color: #f8f8f2">title(</span><span style="color: #e6db74">&quot;Circle&quot;</span><span style="color: #f8f8f2">)</span>
 
@@ -198,7 +204,7 @@
     <br><br><img src="outputs/5.PNG" width="250" height="200">
 
     <h1>6. Ellipse <code><a href="https://repl.it/@dileepdodla/ellipse" target="_blank">▶</a></code></h1>
-    <div class="center">
+    <div class="center" onclick="select(this);">
         <pre style="margin: 0; line-height: 125%"><span style="color: #f92672">import</span> <span style="color: #f8f8f2">turtle</span>
 <span style="color: #f8f8f2">turtle</span><span style="color: #f92672">.</span><span style="color: #f8f8f2">title(</span><span style="color: #e6db74">&quot;Ellipse&quot;</span><span style="color: #f8f8f2">)</span>
 
@@ -220,7 +226,7 @@
     <br><br><img src="outputs/6.PNG" width="250" height="250">
 
     <h1>7. Rotation <code><a href="https://repl.it/@dileepdodla/rotation" target="_blank">▶</a></code></h1>
-    <div class="center">
+    <div class="center" onclick="select(this);">
         <pre style="margin: 0; line-height: 125%"><span style="color: #f92672">import</span> <span style="color: #f8f8f2">turtle</span>
 <span style="color: #f8f8f2">turtle</span><span style="color: #f92672">.</span><span style="color: #f8f8f2">title(</span><span style="color: #e6db74">&quot;Rotating Object&quot;</span><span style="color: #f8f8f2">)</span>
 
@@ -252,7 +258,7 @@
 
     <h1>8. 2D Object Filling <code><a href="https://repl.it/@dileepdodla/2DObjectFilling" target="_blank">▶</a></code>
     </h1>
-    <div class="center">
+    <div class="center" onclick="select(this);">
         <pre style="margin: 0; line-height: 125%"><span style="color: #f92672">import</span> <span style="color: #f8f8f2">turtle</span>
 <span style="color: #f8f8f2">turtle</span><span style="color: #f92672">.</span><span style="color: #f8f8f2">title(</span><span style="color: #e6db74">&quot;2D Object Filling&quot;</span><span style="color: #f8f8f2">)</span>
 
@@ -276,7 +282,7 @@
 
     <h1>9. 2D Object Transformations
         <code><a href="https://repl.it/@dileepdodla/2DObjectTransformations" target="_blank">▶</a></code></h1>
-    <div class="center">
+    <div class="center" onclick="select(this);">
         <pre style="margin: 0; line-height: 125%"><span style="color: #f92672">from</span> <span style="color: #f8f8f2">time</span> <span style="color: #f92672">import</span> <span style="color: #f8f8f2">sleep</span>
 <span style="color: #f92672">import</span> <span style="color: #f8f8f2">turtle</span>
 <span style="color: #f8f8f2">turtle</span><span style="color: #f92672">.</span><span style="color: #f8f8f2">title(</span><span style="color: #e6db74">&quot;2D Object Transformations&quot;</span><span style="color: #f8f8f2">)</span>
@@ -348,7 +354,7 @@
 
     <h1>10. Composition of Two Rotations
         <code><a href="https://repl.it/@dileepdodla/CompositionOfTwoRotations" target="_blank">▶</a></code></h1>
-    <div class="center">
+    <div class="center" onclick="select(this);">
         <pre style="margin: 0; line-height: 125%"><span style="color: #f92672">import</span> <span style="color: #f8f8f2">turtle</span>
 <span style="color: #f8f8f2">turtle</span><span style="color: #f92672">.</span><span style="color: #f8f8f2">title(</span><span style="color: #e6db74">&quot;Composition of Two Rotations&quot;</span><span style="color: #f8f8f2">)</span>
 
@@ -388,7 +394,7 @@
 
     <h1>11. Cohen-Sutherland Line Clipping
         <code><a href="https://repl.it/@dileepdodla/CohenSutherlandLineClipping" target="_blank">▶</a></code></h1>
-    <div class="center">
+    <div class="center" onclick="select(this);">
         <pre style="margin: 0; line-height: 125%"><span style="color: #f92672">from</span> <span style="color: #f8f8f2">time</span> <span style="color: #f92672">import</span> <span style="color: #f8f8f2">sleep</span>
 <span style="color: #f92672">import</span> <span style="color: #f8f8f2">turtle</span>
 <span style="color: #f8f8f2">turtle</span><span style="color: #f92672">.</span><span style="color: #f8f8f2">title(</span><span style="color: #e6db74">&quot;Cohen-Sutherland Line Clipping&quot;</span><span style="color: #f8f8f2">)</span>
@@ -530,7 +536,7 @@
 
     <h1>12. Sutherland-Hodgman Polygon Clipping
         <code><a href="https://repl.it/@dileepdodla/SutherlandHodgmanPolygonClipping" target="_blank">▶</a></code></h1>
-    <div class="center">
+    <div class="center" onclick="select(this);">
         <pre style="margin: 0; line-height: 125%"><span style="color: #f92672">from</span> <span style="color: #f8f8f2">time</span> <span style="color: #f92672">import</span> <span style="color: #f8f8f2">sleep</span>
 <span style="color: #f92672">import</span> <span style="color: #f8f8f2">turtle</span>
 <span style="color: #f8f8f2">turtle</span><span style="color: #f92672">.</span><span style="color: #f8f8f2">title(</span><span style="color: #e6db74">&quot;Sutherland-Hodgman Polygon Clipping&quot;</span><span style="color: #f8f8f2">)</span>
@@ -620,7 +626,7 @@
     <br><br><img src="outputs/12.gif" width="250" height="250">
 
     <h1>13. 3D Object <code><a href="https://repl.it/@dileepdodla/3DObject" target="_blank">▶</a></code></h1>
-    <div class="center">
+    <div class="center" onclick="select(this);">
         <pre style="margin: 0; line-height: 125%"><span style="color: #f92672">import</span> <span style="color: #f8f8f2">turtle</span>
 <span style="color: #f8f8f2">turtle</span><span style="color: #f92672">.</span><span style="color: #f8f8f2">title(</span><span style="color: #e6db74">&quot;3D Object&quot;</span><span style="color: #f8f8f2">)</span>
 
@@ -657,7 +663,7 @@
 
     <h1>14. 3D Object Filling <code><a href="https://repl.it/@dileepdodla/3DObjectFilling" target="_blank">▶</a></code>
     </h1>
-    <div class="center">
+    <div class="center" onclick="select(this);">
         <pre style="margin: 0; line-height: 125%"><span style="color: #f92672">import</span> <span style="color: #f8f8f2">turtle</span>
 <span style="color: #f8f8f2">turtle</span><span style="color: #f92672">.</span><span style="color: #f8f8f2">title(</span><span style="color: #e6db74">&quot;3D Object Filling&quot;</span><span style="color: #f8f8f2">)</span>
 
@@ -717,7 +723,7 @@
 
     <h1>15. 3D Object Transformations
         <code><a href="https://repl.it/@dileepdodla/3DObjectTransformations" target="_blank">▶</a></code></h1>
-    <div class="center">
+    <div class="center" onclick="select(this);">
         <pre style="margin: 0; line-height: 125%"><span style="color: #f92672">from</span> <span style="color: #f8f8f2">time</span> <span style="color: #f92672">import</span> <span style="color: #f8f8f2">sleep</span>
 <span style="color: #f92672">import</span> <span style="color: #f8f8f2">turtle</span>
 <span style="color: #f8f8f2">turtle</span><span style="color: #f92672">.</span><span style="color: #f8f8f2">title(</span><span style="color: #e6db74">&quot;3D Transformations&quot;</span><span style="color: #f8f8f2">)</span>
@@ -819,7 +825,7 @@
 
     <h1>16. Cubic Bezier Curve
         <code><a href="https://repl.it/@dileepdodla/CubicBezierCurve" target="_blank">▶</a></code></h1>
-    <div class="center">
+    <div class="center" onclick="select(this);">
         <pre style="margin: 0; line-height: 125%"><span style="color: #f92672">import</span> <span style="color: #f8f8f2">turtle</span>
 <span style="color: #f8f8f2">turtle</span><span style="color: #f92672">.</span><span style="color: #f8f8f2">title(</span><span style="color: #e6db74">&quot;Cubic Bezier Curve&quot;</span><span style="color: #f8f8f2">)</span>
 
@@ -863,7 +869,7 @@
     <br><br><img src="outputs/16.gif" width="250" height="250">
 
     <h1>17. Cylinder <code><a href="https://repl.it/@dileepdodla/cylinder" target="_blank">▶</a></code></h1>
-    <div class="center">
+    <div class="center" onclick="select(this);">
         <pre style="margin: 0; line-height: 125%"><span style="color: #f92672">import</span> <span style="color: #f8f8f2">turtle</span>
 <span style="color: #f8f8f2">turtle</span><span style="color: #f92672">.</span><span style="color: #f8f8f2">title(</span><span style="color: #e6db74">&quot;Cylinder&quot;</span><span style="color: #f8f8f2">)</span>
 
@@ -929,7 +935,7 @@
 
     <h1>18. Parallel Projection
         <code><a href="https://repl.it/@dileepdodla/ParallelProjection" target="_blank">▶</a></code></h1>
-    <div class="center">
+    <div class="center" onclick="select(this);">
         <pre style="margin: 0; line-height: 125%"><span style="color: #f92672">import</span> <span style="color: #f8f8f2">turtle</span>
 <span style="color: #f8f8f2">turtle</span><span style="color: #f92672">.</span><span style="color: #f8f8f2">title(</span><span style="color: #e6db74">&quot;Parallel Projection&quot;</span><span style="color: #f8f8f2">)</span>
 
@@ -1069,7 +1075,8 @@
     <br><br><img src="outputs/18.gif" width="280" height="300">
 
     <br><br><br>
-    <img src="images/last.gif" style="min-width: 200px; max-width: 80%; height: auto; border: none; box-shadow: 0px 0px 10px white;">
+    <img src="images/last.gif"
+        style="min-width: 200px; max-width: 80%; height: auto; border: none; box-shadow: 0px 0px 10px white;">
     <br><br>
 </body>
 
